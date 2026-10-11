@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>우리의 현실을 <br></nr> 함께 바라봅니다 | YTH-UP</title>
+    <title>우리의 현실을 함께 바라봅니다 | YTH-UP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -236,6 +236,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 .y-section-heading>*{position:relative}
 .y-section-heading .y-eyebrow{font-size:13px;letter-spacing:.22em}
 .y-section-heading h1{font-weight:900;font-size:clamp(33px,4.6vw,57px);letter-spacing:-.065em;line-height:1.24;color:#122d4d;margin:16px 0}
+.y-title-break{display:none}
 .y-section-heading p{font-size:16px;line-height:1.8;color:#557c98}
 .y-subpage>.y-content-section{background:#f8fcff!important;color:#203b55!important;padding:60px 24px 90px!important;isolation:isolate}
 .y-subpage>.y-content-section>div:not(.absolute){max-width:1180px!important;margin-left:auto!important;margin-right:auto!important}
@@ -258,7 +259,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 .y-subpage .y-content-section .font-serif{font-family:'Noto Sans KR',sans-serif!important}
 .y-subpage .y-content-section .shadow-inner,.y-subpage .y-content-section .shadow-xl{box-shadow:0 12px 35px #1f80bd11!important}
 .y-subpage .y-content-section .bg-red-600{background:#e15167!important}
-@media(max-width:650px){.y-section-heading{padding:63px 18px 54px}.y-section-heading p{font-size:14px}.y-subpage>.y-content-section{padding:35px 16px 60px!important}}
+@media(max-width:650px){.y-section-heading{padding:63px 18px 54px}.y-section-heading p{font-size:14px}.y-title-break{display:block}.y-subpage>.y-content-section{padding:35px 16px 60px!important}}
 </style></head>
 <body class="antialiased overflow-x-hidden">
     <div id="instructor-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -342,7 +343,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
     </div>
 
     <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="assets/logos/ythup-brand-final-20261009.png?v=clean-final" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html" aria-current="page">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html" aria-current="page">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a><a href="contact.html">상담 신청</a></div></nav>
-<main class="page-main y-subpage"><section class="y-section-heading"><div class="y-eyebrow">REALITY CHECK</div><h1>우리의 현실을 함께 바라봅니다</h1><p>청년의 고민에서 출발해 더 나은 방향을 찾아갑니다</p></section>
+<main class="page-main y-subpage"><section class="y-section-heading"><div class="y-eyebrow">REALITY CHECK</div><h1>우리의 현실을<br class="y-title-break">함께 바라봅니다</h1><p>청년의 고민에서 출발해 더 나은 방향을 찾아갑니다</p></section>
     <section id="news" class="y-content-section py-20 md:py-24 bg-[#b1dff4] text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#c5ebfb 1px, transparent 1px); background-size: 30px 30px;"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
