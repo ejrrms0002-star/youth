@@ -411,6 +411,12 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
   .y-open .y-mobile {display:grid !important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:16px 24px;background:#fff;box-shadow:0 12px 20px #1b6eac12;}
 }
 </style>
+
+<style id="ythup-single-badge-fix-20261012">
+.yth-single-brand-badge {display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;margin:0 auto 32px!important;padding:0!important;position:static!important;transform:none!important;animation:none!important;background:none!important;border:none!important;box-shadow:none!important;}
+.yth-single-brand-badge img {display:block!important;width:clamp(180px,19vw,260px)!important;height:auto!important;aspect-ratio:1/1!important;margin:0 auto!important;padding:0!important;position:static!important;object-fit:contain!important;object-position:center center!important;transform:none!important;animation:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:none!important;}
+@media(max-width:640px){.yth-single-brand-badge img{width:210px!important}}
+</style>
 </head>
 <body class="antialiased overflow-x-hidden">
     <div id="instructor-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -498,9 +504,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
     <section id="about" class="y-content-section py-20 md:py-24 bg-white relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-12">
-                <div class="yth-glow-frame" aria-label="YTH-UP 로고">
-                    <img src="assets/logos/ythup-about-logo-centered-20261012-v3.png" alt="YTH-UP" class="yth-glow-logo">
-                </div>
+                <div class="yth-single-brand-badge" aria-label="YTH-UP 로고"><img src="assets/logos/ythup-centered-badge-20261012-fixed.png" alt="YTH-UP 로고" width="260" height="260"></div>
 
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif animate-shine-text">청년의 가능성을 그리는 YTH-UP</h2>
                 <p class="yth-journey-intro">나를 발견하고, 삶의 방향을 세우며, 가능성을 현실로 만드는 성장의 여정</p>
