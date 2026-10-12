@@ -266,57 +266,45 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 @media(max-width:580px){.y-logo{width:140px!important;min-width:125px!important}.y-logo img{width:140px!important;height:58px!important}}
 </style>
 <style id="ythup-about-logo-centered-final">
-/* 소개 로고: 원형 프레임 안에서 로고가 정확히 중앙에 오도록 수정 */
+/* Frame + PNG are now separately centered, with no offsets */
 #about .yth-glow-frame {
-  width: min(220px, 58vw) !important;
-  aspect-ratio: 1 / 1 !important;
+  width: min(216px, 64vw) !important;
+  height: min(216px, 64vw) !important;
+  aspect-ratio: 1 !important;
   margin: 0 auto 32px !important;
   padding: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  display: grid !important;
+  place-items: center !important;
   position: relative !important;
   left: auto !important;
   right: auto !important;
   transform: none !important;
+  box-sizing: border-box !important;
   overflow: hidden !important;
-  background: radial-gradient(circle at 50% 42%, #f5fbff 0%, #edf8ff 62%, #e8f4fc 100%) !important;
   border-radius: 50% !important;
-  border: 1px solid rgba(224, 216, 198, 0.85) !important;
-  box-shadow:
-    inset 0 0 0 10px rgba(255,255,255,0.55),
-    inset 0 0 0 1px rgba(190, 214, 230, 0.55),
-    0 10px 22px rgba(27,118,178,0.08) !important;
+  border: 5px solid #e7e2d9 !important;
+  background: #eaf7ff !important;
+  box-shadow: inset 0 0 0 2px rgba(191,218,232,.72) !important;
   animation: none !important;
-  isolation: auto !important;
 }
-#about .yth-glow-frame::before {
-  content: "";
-  position: absolute;
-  inset: 16px;
-  border-radius: 50%;
-  border: 1px solid rgba(192, 216, 234, 0.6);
-}
+#about .yth-glow-frame::before, #about .yth-glow-frame::after { content: none !important; display: none !important; }
 #about .yth-glow-frame .yth-glow-logo {
   display: block !important;
-  width: 63% !important;
-  max-width: 63% !important;
-  height: auto !important;
-  position: relative !important;
-  z-index: 2 !important;
-  margin: 0 auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  position: static !important;
+  margin: 0 !important;
   padding: 0 !important;
   object-fit: contain !important;
-  object-position: center center !important;
+  object-position: 50% 50% !important;
   transform: none !important;
   animation: none !important;
   filter: none !important;
 }
 #about .yth-glow-frame .yth-spark {display:none !important;}
-@media(max-width:640px) {
-  #about .yth-glow-frame {width:min(190px, 62vw) !important; margin-bottom: 26px !important;}
-  #about .yth-glow-frame .yth-glow-logo {width:65% !important; max-width:65% !important;}
-}
+@media(max-width:640px){#about .yth-glow-frame{width:min(190px,64vw) !important;height:min(190px,64vw) !important;}}
 </style>
 
 <style id="yth-growth-journey-20261010">
@@ -448,13 +436,13 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
         </div>
     </div>
 
-    <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="assets/logos/ythup-brand-final-20261009.png" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a><a href="contact.html">상담 신청</a></div></nav>
+    <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="assets/logos/ythup-brand-final-20261009.png" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">청년 현실</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">후기</a><a href="contact.html">상담 신청</a></div></nav>
 <main class="page-main y-subpage"><section class="y-section-heading"><div class="y-eyebrow">ABOUT YTH-UP</div><h1>우리는 함께 성장합니다</h1><p>청년의 가능성을 발견하고, 내일을 더 선명하게 그려가는 공간</p></section>
     <section id="about" class="y-content-section py-20 md:py-24 bg-white relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-12">
                 <div class="yth-glow-frame" aria-label="YTH-UP 로고">
-                    <img src="assets/logos/ythup-about-logo-square-centered-20261012.png" alt="YTH-UP" class="yth-glow-logo">
+                    <img src="assets/logos/ythup-about-logo-optical-center-v2.png?v=2" alt="YTH-UP" class="yth-glow-logo">
                 </div>
 
                 <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif animate-shine-text">청년의 가능성을 그리는 YTH-UP</h2>
@@ -485,7 +473,6 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
                         <div class="yth-growth-key">가능성을 발견하고, 행동으로 성장한다!</div>
                     </article>
                 </div>
-                <div class="yth-growth-flow">발견 <span>→</span> 기준 <span>→</span> 목적 <span>→</span> 실천</div>
             </div>
         </div>
     </section>
