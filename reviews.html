@@ -259,7 +259,27 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 .y-subpage .y-content-section .shadow-inner,.y-subpage .y-content-section .shadow-xl{box-shadow:0 12px 35px #1f80bd11!important}
 .y-subpage .y-content-section .bg-red-600{background:#e15167!important}
 @media(max-width:650px){.y-section-heading{padding:63px 18px 54px}.y-section-heading p{font-size:14px}.y-subpage>.y-content-section{padding:35px 16px 60px!important}}
-</style></head>
+</style>
+<style id="ythup-nav-font-upgrade-20261012">
+/* 더 선명한 전체 상단 카테고리 및 모바일 메뉴 */
+.y-nav-inner {max-width:1320px !important; gap:14px !important;}
+.y-links {gap:clamp(9px,1.1vw,17px) !important;}
+.y-links a {font-size:15px !important; font-weight:800 !important; letter-spacing:-.035em;}
+.y-mobile a {font-size:16px !important; font-weight:800 !important; line-height:1.5; padding:14px 13px !important;}
+@media (min-width:1121px) and (max-width:1260px) {
+  .y-links {gap:10px !important;}
+  .y-logo {width:150px !important; min-width:150px !important;}
+  .y-logo img {width:150px !important;}
+  .y-cta {padding:12px 14px !important;}
+}
+/* 메뉴가 빽빽해지는 폭에서는 모바일 메뉴로 자연스럽게 전환 */
+@media (max-width:1120px) {
+  .y-links, .y-cta {display:none !important;}
+  .y-menu-button {display:block !important; margin-left:auto;}
+  .y-open .y-mobile {display:grid !important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:16px 24px;background:#fff;box-shadow:0 12px 20px #1b6eac12;}
+}
+</style>
+</head>
 <body class="antialiased overflow-x-hidden">
     <div id="instructor-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         <div class="fixed inset-0 bg-black/70 backdrop-blur-sm transition-opacity" aria-hidden="true" onclick="closeModal()"></div>
@@ -341,7 +361,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
         </div>
     </div>
 
-    <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="assets/logos/ythup-brand-final-20261009.png?v=clean-final" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html" aria-current="page">수강후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">강사진</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html" aria-current="page">수강후기</a><a href="contact.html">상담 신청</a></div></nav>
+    <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="assets/logos/ythup-brand-final-20261009.png?v=clean-final" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">Nov.5</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html" aria-current="page">수강후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">Nov.5</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html" aria-current="page">수강후기</a><a href="contact.html">상담 신청</a></div></nav>
 <main class="page-main y-subpage"><section class="y-section-heading"><div class="y-eyebrow">STORIES</div><h1>서로의 성장이 들려주는 이야기</h1><p>각자의 경험과 진솔한 목소리를 만나보세요</p></section>
     <section id="reviews" class="y-content-section py-20 md:py-24 bg-[#a9def5] relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
