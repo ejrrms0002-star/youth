@@ -742,6 +742,26 @@ bars.forEach((bar, index) => {
 
 
     </script>
+
+<style id="yth-contact-success-style">
+#yth-success-overlay{position:fixed;inset:0;background:rgba(16,42,72,.54);z-index:9999;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(3px)}
+#yth-success-overlay.is-open{display:flex}
+#yth-success-dialog{width:min(100%,420px);padding:38px 30px 30px;background:#fff;border-radius:24px;box-shadow:0 25px 70px rgba(15,58,101,.25);text-align:center;color:#183e60}
+#yth-success-icon{margin:0 auto 20px;width:68px;height:68px;border-radius:50%;background:#e7f7ef;color:#168653;display:grid;place-items:center;font-size:36px;font-weight:900}
+#yth-success-dialog h2{font-size:24px;font-weight:900;margin:0 0 12px;letter-spacing:-.04em}
+#yth-success-dialog p{font-size:15px;line-height:1.8;color:#61788b;margin:0 0 23px;word-break:keep-all}
+#yth-success-close{background:linear-gradient(120deg,#24a4e3,#1479cc);color:white;border:0;border-radius:14px;width:100%;height:48px;font-weight:800;font-size:16px;cursor:pointer}
+#yth-success-close:focus-visible{outline:3px solid #80c5eb;outline-offset:3px}
+</style>
+<div id="yth-success-overlay" role="presentation">
+  <section id="yth-success-dialog" role="dialog" aria-modal="true" aria-labelledby="yth-success-heading" aria-describedby="yth-success-description" tabindex="-1">
+    <div id="yth-success-icon" aria-hidden="true">✓</div>
+    <h2 id="yth-success-heading">상담 신청 요청이 완료되었습니다!</h2>
+    <p id="yth-success-description">작성하신 상담 신청 내용을 전송했습니다.<br>접수 내역은 담당자가 확인할 예정입니다.</p>
+    <button id="yth-success-close" type="button">확인</button>
+  </section>
+</div>
+
 <script id="yth-contact-gas-script">
 (function(){
   // Google Apps Script 웹 앱 배포 URL을 입력하세요. /exec로 끝납니다.
@@ -756,6 +776,13 @@ bars.forEach((bar, index) => {
   };
   const status = document.getElementById('yth-contact-status');
   const submit = document.getElementById('yth-contact-submit');
+  const successOverlay=document.getElementById('yth-success-overlay');
+  const successClose=document.getElementById('yth-success-close');
+  function closeSuccess(){successOverlay.classList.remove('is-open');submit.focus();}
+  successClose.addEventListener('click',closeSuccess);
+  successOverlay.addEventListener('click',e=>{if(e.target===successOverlay)closeSuccess();});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&successOverlay.classList.contains('is-open'))closeSuccess();});
+
   const errors = {
     name:document.getElementById('yth-name-error'),
     phone:document.getElementById('yth-phone-error'),
@@ -800,10 +827,13 @@ bars.forEach((bar, index) => {
       // no-cors 응답은 읽을 수 없어 서버의 기록 성공을 여기서 확정할 수 없습니다.
       const body=new URLSearchParams({name:fields.name.value.trim(),phone:fields.phone.value.trim(),message:fields.message.value.trim(),consent:'YES',source:'YTH-UP contact.html'});
       await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',body});
-      status.textContent='전송 요청을 보냈습니다. 접수 여부는 관리자가 확인 후 안내드립니다.';
+      status.textContent='전송 요청을 보냈습니다. 접수 여부는 담당자가 확인합니다.';
       status.style.color='#146b42';
       form.reset();
       Object.keys(errors).forEach(key=>mark(key,''));
+      const overlay=document.getElementById('yth-success-overlay');
+      overlay.classList.add('is-open');
+      document.getElementById('yth-success-close').focus();
     }catch(err){
       status.textContent='전송 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.';
       status.style.color='#dc2626';
