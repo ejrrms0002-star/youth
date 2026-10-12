@@ -417,6 +417,29 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 .yth-single-brand-badge img {display:block!important;width:clamp(180px,19vw,260px)!important;height:auto!important;aspect-ratio:1/1!important;margin:0 auto!important;padding:0!important;position:static!important;object-fit:contain!important;object-position:center center!important;transform:none!important;animation:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:none!important;}
 @media(max-width:640px){.yth-single-brand-badge img{width:210px!important}}
 </style>
+
+<style id="ythup-director-greeting">
+.yth-greeting-section{padding:clamp(40px,7vw,100px) 22px;background:linear-gradient(160deg,#f7fcff,#fff 55%,#f0f8ff)}
+.yth-greeting-wrap{max-width:1140px;margin:0 auto}
+.yth-greeting-card{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(28px,5vw,65px);align-items:center;padding:clamp(25px,4vw,48px);border:1px solid #d9eaf6;border-radius:30px;background:linear-gradient(130deg,#ffffff 0%,#fbfdff 100%);box-shadow:0 20px 65px rgba(40,109,160,.09)}
+.yth-greeting-photo{min-height:490px;height:100%;border:1px solid #d4e6f1;border-radius:22px;background:linear-gradient(140deg,#f0f8ff,#e7f4fb);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.yth-greeting-photo-placeholder{display:flex;flex-direction:column;align-items:center;gap:13px;color:#829caf}
+.yth-greeting-photo-placeholder svg{width:58px;height:58px;opacity:.55}
+.yth-greeting-photo-placeholder span{font-weight:600;font-size:14px;letter-spacing:.04em}
+.yth-greeting-eyebrow{display:inline-block;color:#1681c2;font-weight:800;letter-spacing:.16em;font-size:13px;margin-bottom:14px}
+.yth-greeting-role{font-size:16px;color:#517894;font-weight:800;margin-bottom:5px}
+.yth-greeting-name{font-size:clamp(29px,3.2vw,40px);font-weight:900;letter-spacing:-.05em;line-height:1.28;color:#123b5d;margin:0}
+.yth-greeting-rule{width:64px;height:3px;background:#c59f58;border-radius:6px;margin:24px 0 30px}
+.yth-greeting-body{color:#425e74;font-size:clamp(15px,1.3vw,17px);line-height:2;word-break:keep-all}
+.yth-greeting-body p{margin:0 0 19px}
+.yth-greeting-body strong{font-weight:800;color:#194f78}
+.yth-greeting-quote{margin-top:24px;background:#edf7fd;border-left:4px solid #c59f58;border-radius:0 15px 15px 0;padding:22px 24px;color:#135788;font-weight:800;text-align:center;line-height:1.9;word-break:keep-all}
+.yth-greeting-signoff{margin-top:27px;text-align:right;color:#58768b;font-size:14px}
+.yth-greeting-signoff strong{display:block;color:#123b5d;font-size:20px;letter-spacing:.04em;margin-top:4px}
+@media(max-width:800px){.yth-greeting-card{grid-template-columns:1fr;gap:26px}.yth-greeting-photo{min-height:330px;height:350px}.yth-greeting-section{padding:35px 15px 65px}.yth-greeting-quote{padding:18px 16px}}
+@media(max-width:480px){.yth-greeting-card{padding:18px;border-radius:22px}.yth-greeting-photo{height:300px;min-height:300px;border-radius:15px}.yth-greeting-body{font-size:15px;line-height:1.9}.yth-greeting-rule{margin:19px 0 24px}}
+</style>
+
 </head>
 <body class="antialiased overflow-x-hidden">
     <div id="instructor-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -500,45 +523,43 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
     </div>
 
     <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="assets/logos/ythup-brand-final-20261009.png" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">Nov.5</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">수강후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html" aria-current="page">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">Nov.5</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">수강후기</a><a href="contact.html">상담 신청</a></div></nav>
-<main class="page-main y-subpage"><section class="y-section-heading"><div class="y-eyebrow">ABOUT YTH-UP</div><h1>우리는 함께 성장합니다</h1><p>청년의 가능성을 발견하고, 내일을 더 선명하게 그려가는 공간</p></section>
-    <section id="about" class="y-content-section py-20 md:py-24 bg-white relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="mb-12">
-                <div class="yth-single-brand-badge" aria-label="YTH-UP 로고"><img src="assets/logos/ythup-centered-badge-20261012-fixed.png" alt="YTH-UP 로고" width="260" height="260"></div>
-
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif animate-shine-text">청년의 가능성을 그리는 YTH-UP</h2>
-                <p class="yth-journey-intro">나를 발견하고, 삶의 방향을 세우며, 가능성을 현실로 만드는 성장의 여정</p>
-                <div class="yth-growth-grid" aria-label="YTH-UP 4단계 성장 과정">
-                    <article class="yth-growth-card">
-                        <div class="yth-growth-top"><span>STEP 01</span><span class="yth-growth-symbol" aria-hidden="true">✦</span></div>
-                        <h3>나의 발견</h3>
-                        <p>내가 가진 강점과 가능성을 발견하고, 나만의 매력과 발전시켜야 할 부분을 명확하게 알아갑니다.</p>
-                        <div class="yth-growth-key">나만의 강점을 발견한다!</div>
-                    </article>
-                    <article class="yth-growth-card">
-                        <div class="yth-growth-top"><span>STEP 02</span><span class="yth-growth-symbol" aria-hidden="true">◇</span></div>
-                        <h3>삶의 의미와 방향 탐색</h3>
-                        <p>삶에서 무엇이 중요하고 가치 있는지 탐색하며, 나만의 기준을 세우고 앞으로 나아갈 방향을 찾아갑니다.</p>
-                        <div class="yth-growth-key">나만의 삶의 기준과 방향을 세운다!</div>
-                    </article>
-                    <article class="yth-growth-card">
-                        <div class="yth-growth-top"><span>STEP 03</span><span class="yth-growth-symbol" aria-hidden="true">◎</span></div>
-                        <h3>삶의 목적과 앞으로의 방향 구체화하기</h3>
-                        <p>나는 왜 살아가는지, 어떤 삶을 살아가야 하는지 탐구하며 막연했던 미래를 구체적인 방향과 목표로 연결합니다.</p>
-                        <div class="yth-growth-key">내가 살아갈 이유와 방향을 찾는다!</div>
-                    </article>
-                    <article class="yth-growth-card">
-                        <div class="yth-growth-top"><span>STEP 04</span><span class="yth-growth-symbol" aria-hidden="true">↗</span></div>
-                        <h3>발견한 가능성을 실제 성장으로 연결하기</h3>
-                        <p>나의 부족한 부분은 발전시키고, 원하는 삶에 필요한 목표를 세워 실제 행동으로 옮기며 한 단계씩 성장합니다.</p>
-                        <div class="yth-growth-key">가능성을 발견하고, 행동으로 성장한다!</div>
-                    </article>
-                </div>
-            </div>
+<main class="page-main y-subpage">
+  <section class="y-section-heading">
+    <div class="y-eyebrow">ABOUT YTH-UP</div>
+    <h1>대표 인사말</h1>
+    <p>청년의 가능성을 믿고, 함께 성장하는 YTH-UP</p>
+  </section>
+  <section class="yth-greeting-section" aria-labelledby="director-greeting-title">
+    <div class="yth-greeting-wrap">
+      <article class="yth-greeting-card">
+        <div class="yth-greeting-photo" aria-label="대표 사진을 나중에 넣을 공간">
+          <div class="yth-greeting-photo-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="6" y="8" width="52" height="48" rx="7"/>
+              <circle cx="23" cy="24" r="6"/>
+              <path d="m12 46 13-13 10 10 8-8 9 11"/>
+            </svg>
+            <span>대표 사진</span>
+          </div>
         </div>
-    </section>
-
-
+        <div class="yth-greeting-content">
+          <span class="yth-greeting-eyebrow">A MESSAGE FROM YTH-UP</span>
+          <div class="yth-greeting-role">YTH-UP 대표</div>
+          <h2 class="yth-greeting-name" id="director-greeting-title">임동희</h2>
+          <div class="yth-greeting-rule"></div>
+          <div class="yth-greeting-body">
+            <p>안녕하세요.<br>YTH-UP 대표 임동희입니다.</p>
+            <p>우리는 누구나 저마다의 가능성을 가지고 있지만, 때로는 자신이 무엇을 잘하는지, 어떤 방향으로 나아가야 할지 막막함을 느낍니다.</p>
+            <p>YTH-UP은 그런 고민에서 출발했습니다. 청년들이 <strong>자신의 강점을 발견하고, 다양한 배움과 경험을 통해 삶의 방향을 찾아갈 수 있는 공간</strong>을 만들고 싶었습니다.</p>
+            <p>새로운 생각을 만나고, 서로 다른 이야기에 귀 기울이며, 작은 도전을 실천하는 과정 속에서 우리는 조금씩 성장합니다. YTH-UP은 그 여정을 혼자가 아닌 함께 만들어가고자 합니다.</p>
+            <p>청년 한 사람 한 사람의 가능성이 오늘의 자신감을 넘어 내일의 변화로 이어질 수 있도록, 진심을 다해 함께하겠습니다.</p>
+          </div>
+          <div class="yth-greeting-quote">“지금의 나를 넘어, 더 큰 가능성을 만나는 곳”</div>
+          <div class="yth-greeting-signoff">YTH-UP 대표 <strong>임동희</strong></div>
+        </div>
+      </article>
+    </div>
+  </section>
 </main>
     <footer class="y-footer"><div class="y-footer-inner"><div><strong>YTH-UP</strong><p style="margin-top:8px;font-size:13px">청년의 에너지와 가능성을 끌어올리다.</p></div><div style="font-size:13px"><a href="about.html" aria-current="page">소개</a>　·　<a href="curriculum.html">커리큘럼</a>　·　<a href="contact.html">상담 신청</a></div></div></footer>
     <script>
