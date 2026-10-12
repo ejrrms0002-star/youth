@@ -166,6 +166,20 @@
 .y-logo-float img{object-fit:contain!important}
 @media(max-width:1100px){.y-logo{width:170px!important;min-width:150px!important}.y-logo img{width:170px!important;height:62px!important}}
 @media(max-width:580px){.y-logo{width:150px!important;min-width:140px!important}.y-logo img{width:150px!important;height:58px!important}}
+
+/* 대표 인사말 페이지 - 멘토 모달 가독성 개선 */
+#instructor-modal .yth-modal-header{background:linear-gradient(135deg,#1f4f78 0%,#6fb3df 100%)}
+#instructor-modal .yth-modal-header::after{content:"";position:absolute;inset:auto 0 0 0;height:56px;background:linear-gradient(to top,rgba(255,255,255,.18),rgba(255,255,255,0));pointer-events:none}
+#instructor-modal .yth-modal-name{color:#fff}
+#instructor-modal .yth-modal-role{color:#f2d39a}
+#instructor-modal .yth-modal-desc{color:#47647b;line-height:1.95;font-weight:600}
+#instructor-modal .yth-modal-quote-box{background:linear-gradient(180deg,#f7fbff 0%,#eef7fd 100%);border:1px solid #d7e9f6;border-left:4px solid #c59f58;border-radius:0 18px 18px 0;padding:24px;box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+#instructor-modal .yth-modal-quote-title{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#1f6ea6;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+#instructor-modal .yth-modal-quote-list{color:#466377;font-size:15px;line-height:1.9;font-weight:600}
+#instructor-modal .yth-modal-close-btn{background:#1f6ea6;color:#fff;border:none;box-shadow:0 10px 24px rgba(31,110,166,.18)}
+#instructor-modal .yth-modal-close-btn:hover{background:#155986}
+@media(max-width:640px){#instructor-modal .yth-modal-quote-box{padding:18px}#instructor-modal .yth-modal-desc{font-size:16px}}
+
 </style>
 
 <style id="yth-up-soft-sky-2026">
@@ -448,7 +462,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
             <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
                 <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:my-8 sm:w-full sm:max-w-2xl border border-[var(--brand-gold)]/20">
                     
-                    <div class="bg-[var(--brand-green)] px-6 pt-12 pb-16 sm:px-10 sm:pt-14 sm:pb-20 relative text-center sm:text-left">
+                    <div class="yth-modal-header px-6 pt-12 pb-16 sm:px-10 sm:pt-14 sm:pb-20 relative text-center sm:text-left">
                         <button type="button" class="absolute top-4 right-4 text-white/70 hover:text-white transition-colors p-1" onclick="closeModal()">
                             <i data-lucide="x" class="w-6 h-6"></i>
                         </button>
@@ -459,27 +473,27 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
                             </div>
                             
                             <div class="text-center sm:text-left">
-                                <h3 class="text-3xl font-bold text-white mb-1 tracking-tight" id="modal-name">이름</h3>
-                                <p class="text-[var(--brand-gold)] font-bold text-lg" id="modal-role">직책</p>
+                                <h3 class="yth-modal-name text-3xl font-bold mb-1 tracking-tight" id="modal-name">이름</h3>
+                                <p class="yth-modal-role font-bold text-lg" id="modal-role">직책</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="px-6 py-8 sm:px-10 bg-white -mt-8 rounded-t-3xl relative z-10">
-                        <p id="modal-desc" class="text-gray-600 leading-relaxed font-medium mb-8 text-lg">
+                        <p id="modal-desc" class="yth-modal-desc mb-8 text-lg">
                             상세 소개글이 들어갑니다.
                         </p>
                         
-                        <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-inner">
-                            <h4 class="text-sm font-bold text-[var(--brand-green)] uppercase tracking-wider mb-4 flex items-center">
-                                <i data-lucide="award" class="w-4 h-4 mr-2"></i>Motto & Wise saying
+                        <div class="yth-modal-quote-box">
+                            <h4 class="yth-modal-quote-title">
+                                <i data-lucide="award" class="w-4 h-4"></i>Motto & Wise Saying
                             </h4>
-                            <ul class="space-y-3 text-sm text-gray-700" id="modal-career">
+                            <ul class="yth-modal-quote-list space-y-3" id="modal-career">
                                 </ul>
                         </div>
 
                         <div class="mt-8 text-center sm:text-right">
-                            <button type="button" class="inline-flex w-full justify-center rounded-lg bg-[var(--brand-green)] px-6 py-3 text-sm font-bold text-white shadow-lg hover:bg-[#82c5e8] sm:w-auto transition-colors" onclick="closeModal()">
+                            <button type="button" class="yth-modal-close-btn inline-flex w-full justify-center rounded-lg px-6 py-3 text-sm font-bold sm:w-auto transition-colors" onclick="closeModal()">
                                 닫기
                             </button>
                         </div>
