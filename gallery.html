@@ -276,6 +276,20 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 @media(max-width:980px){.yth-field-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:175px}}
 @media(max-width:640px){.yth-field-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:145px;gap:10px}.yth-field-card{border-radius:15px}.yth-field-card.wide{grid-column:span 2}.yth-field-card.portrait{grid-row:span 2}.yth-field-card .yth-caption{padding:35px 10px 11px}.yth-field-card .yth-caption strong{font-size:13px}.yth-field-card .yth-caption small{font-size:9px}.yth-lightbox .yth-prev,.yth-lightbox .yth-next{width:34px;height:34px;font-size:20px;top:auto;bottom:10px}.yth-lightbox .yth-prev{left:25%}.yth-lightbox .yth-next{right:25%}}
 @media(prefers-reduced-motion:reduce){.yth-field-card img{transition:none}}
+
+/* 전체 사진을 활동별로 통합한 현장 스케치 */
+.yth-gallery-jump{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:0 auto 55px}
+.yth-gallery-jump a{border:1px solid #cfe5f6;border-radius:999px;padding:11px 19px;background:#f5fbff;color:#174b77;font-size:14px;font-weight:800;text-decoration:none;box-shadow:0 5px 15px #155b9110;transition:.2s}
+.yth-gallery-jump a:hover,.yth-gallery-jump a:focus-visible{background:#e3f3ff;border-color:#7ac1ed;transform:translateY(-2px)}
+.yth-gallery-jump a span{color:#168bd4;font-size:12px;margin-left:6px}
+.yth-gallery-category{scroll-margin-top:105px;margin:0 0 64px}
+.yth-category-head{border-top:1px solid #dbeaf5;padding:30px 0 8px;margin-top:8px}
+.yth-category-eyebrow{display:block;color:#1781bf;font-weight:900;font-size:12px;letter-spacing:.13em;margin-bottom:9px}
+.yth-category-head h3{color:#123958;font-weight:900;font-size:clamp(24px,3vw,32px);letter-spacing:-.045em;margin:0 0 6px}
+.yth-category-head h3 small{font-size:11px;letter-spacing:.05em;color:#7c9bb1;margin-left:9px;vertical-align:middle}
+.yth-category-head p{color:#597b93;font-size:14px;margin:0}
+.yth-gallery-category .yth-field-grid{margin:24px 0 20px}
+@media(max-width:640px){.yth-gallery-jump{gap:8px;margin-bottom:32px}.yth-gallery-jump a{font-size:12px;padding:9px 11px}.yth-gallery-category{margin-bottom:40px}.yth-category-head{padding-top:24px}}
 </style></head>
 <body class="antialiased overflow-x-hidden">
     <div id="instructor-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -368,121 +382,56 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
                 <div class="w-24 h-1 bg-[var(--brand-gold)] mx-auto"></div>
                 <p class="mt-4 text-gray-600">뜨거운 열정이 가득한 강의 및 활동 모습입니다.</p>
             </div>
-            <div class="yth-field-intro"><span class="tag">NEW MOMENTS</span><h3>함께 만들어가는 우리의 순간</h3><p>배우고, 도전하고, 함께 웃었던 생생한 활동들을 만나보세요.</p></div><div class="yth-field-grid"><button class="yth-field-card wide" type="button" data-index="0" aria-label="함께하는 활동 사진 크게 보기"><img src="assets/images/ythup-field-01.jpg" alt="함께하는 활동" loading="lazy" decoding="async"><span class="yth-caption"><small>TEAM ACTIVITY</small><strong>함께하는 활동</strong></span></button><button class="yth-field-card wide" type="button" data-index="1" aria-label="봄날의 야외 나들이 사진 크게 보기"><img src="assets/images/ythup-field-02.jpg" alt="봄날의 야외 나들이" loading="lazy" decoding="async"><span class="yth-caption"><small>OUTDOOR</small><strong>봄날의 야외 나들이</strong></span></button><button class="yth-field-card portrait" type="button" data-index="2" aria-label="바다를 배경으로 남긴 추억 사진 크게 보기"><img src="assets/images/ythup-field-03.jpg" alt="바다를 배경으로 남긴 추억" loading="lazy" decoding="async"><span class="yth-caption"><small>OUR MOMENTS</small><strong>바다를 배경으로 남긴 추억</strong></span></button><button class="yth-field-card " type="button" data-index="3" aria-label="실내 스포츠 모임 사진 크게 보기"><img src="assets/images/ythup-field-04.jpg" alt="실내 스포츠 모임" loading="lazy" decoding="async"><span class="yth-caption"><small>SPORTS DAY</small><strong>실내 스포츠 모임</strong></span></button><button class="yth-field-card " type="button" data-index="4" aria-label="함께 즐기는 문화 시간 사진 크게 보기"><img src="assets/images/ythup-field-05.jpg" alt="함께 즐기는 문화 시간" loading="lazy" decoding="async"><span class="yth-caption"><small>CULTURE</small><strong>함께 즐기는 문화 시간</strong></span></button><button class="yth-field-card wide" type="button" data-index="5" aria-label="전망대에서의 단체 사진 사진 크게 보기"><img src="assets/images/ythup-field-06.jpg" alt="전망대에서의 단체 사진" loading="lazy" decoding="async"><span class="yth-caption"><small>OUR MOMENTS</small><strong>전망대에서의 단체 사진</strong></span></button><button class="yth-field-card " type="button" data-index="6" aria-label="함께 즐기는 게임 사진 크게 보기"><img src="assets/images/ythup-field-07.jpg" alt="함께 즐기는 게임" loading="lazy" decoding="async"><span class="yth-caption"><small>PLAY TOGETHER</small><strong>함께 즐기는 게임</strong></span></button><button class="yth-field-card " type="button" data-index="7" aria-label="겨울 스포츠 체험 사진 크게 보기"><img src="assets/images/ythup-field-08.jpg" alt="겨울 스포츠 체험" loading="lazy" decoding="async"><span class="yth-caption"><small>NEW EXPERIENCE</small><strong>겨울 스포츠 체험</strong></span></button><button class="yth-field-card wide" type="button" data-index="8" aria-label="함께한 야외 활동 사진 크게 보기"><img src="assets/images/ythup-field-09.jpg" alt="함께한 야외 활동" loading="lazy" decoding="async"><span class="yth-caption"><small>TOGETHER</small><strong>함께한 야외 활동</strong></span></button><button class="yth-field-card portrait" type="button" data-index="9" aria-label="우리들의 특별한 하루 사진 크게 보기"><img src="assets/images/ythup-field-10.jpg" alt="우리들의 특별한 하루" loading="lazy" decoding="async"><span class="yth-caption"><small>OUR STORY</small><strong>우리들의 특별한 하루</strong></span></button></div><h3 class="yth-field-old-heading">지난 활동 돌아보기</h3><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p1.jpg" alt="강의실 전경" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Lecture</span>
-                        <h4 class="text-white text-lg font-bold">집중도 높은 강의 현장</h4>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p2.jpg" alt="그룹 멘토링" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Coaching</span>
-                        <h4 class="text-white text-lg font-bold">소그룹 심층 코칭</h4>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p3.jpg" alt="팀 프로젝트" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Project</span>
-                        <h4 class="text-white text-lg font-bold">팀 프로젝트 회의</h4>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p4.jpg" alt="워크숍" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Workshop</span>
-                        <h4 class="text-white text-lg font-bold">워크숍</h4>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p5.jpg" alt="D.I.Y" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Club Day</span>
-                        <h4 class="text-white text-lg font-bold">D.I.Y</h4>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p6.jpg" alt="D.I.Y" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Club Day</span>
-                        <h4 class="text-white text-lg font-bold">D.I.Y</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p7.jpg" alt="문화생활(전시)" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">cultural life</span>
-                        <h4 class="text-white text-lg font-bold">문화생활(전시)</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p8.jpg" alt="체육활동" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Sprots Day</span>
-                        <h4 class="text-white text-lg font-bold">체육활동</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p9.jpg" alt="체육활동" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Sports Day</span>
-                        <h4 class="text-white text-lg font-bold">체육활동</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p10.jpg" alt="체육활동" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Sports Day</span>
-                        <h4 class="text-white text-lg font-bold">체육활동</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p11.jpg" alt="배드민턴" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Badminton</span>
-                        <h4 class="text-white text-lg font-bold">동아리(배드민턴)</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p12.jpg" alt="등산" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Hiking</span>
-                        <h4 class="text-white text-lg font-bold">동아리(등산)</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p13.jpg" alt="런닝" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Running</span>
-                        <h4 class="text-white text-lg font-bold">동아리(런닝)</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p14.jpg" alt="보드게임" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">board game</span>
-                        <h4 class="text-white text-lg font-bold">동아리(보드게임)</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p15.jpg" alt="연말행사" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Holiday Party</span>
-                        <h4 class="text-white text-lg font-bold">연말행사</h4>
-                    </div>
-                </div>
-		<div class="group relative overflow-hidden rounded-2xl shadow-lg h-56 cursor-pointer">
-                    <img src="assets/images/p16.jpg" alt="수료식" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                        <span class="text-[var(--brand-gold)] text-xs font-bold uppercase mb-1">Ceremony</span>
-                        <h4 class="text-white text-lg font-bold">감동의 마무리</h4>
-                    </div>
-                </div>
-
-            </div>
+            <div class="yth-gallery-categories" id="yth-categories">
+<nav class="yth-gallery-jump" aria-label="사진 카테고리 바로가기">
+<a href="#yth-category-1">배움과 프로젝트 <span>6</span></a>
+<a href="#yth-category-2">문화와 교류 <span>8</span></a>
+<a href="#yth-category-3">체육과 도전 <span>6</span></a>
+<a href="#yth-category-4">야외와 여행 <span>6</span></a>
+</nav>
+<section class="yth-gallery-category" id="yth-category-1" aria-labelledby="yth-category-heading-1">
+<header class="yth-category-head"><div><span class="yth-category-eyebrow">LEARNING & PROJECT · 01</span><h3 id="yth-category-heading-1">배움과 프로젝트 <small>6 PHOTOS</small></h3><p>서로의 생각을 나누고 함께 성장하는 시간</p></div></header>
+<div class="yth-field-grid">
+<button class="yth-field-card wide" type="button" aria-label="강의 현장 사진 크게 보기"><img src="assets/images/p1.jpg" alt="강의 현장" loading="lazy" decoding="async"><span class="yth-caption"><small>LEARNING & PROJECT</small><strong>강의 현장</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="소그룹 멘토링 사진 크게 보기"><img src="assets/images/p2.jpg" alt="소그룹 멘토링" loading="lazy" decoding="async"><span class="yth-caption"><small>LEARNING & PROJECT</small><strong>소그룹 멘토링</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="팀 프로젝트 사진 크게 보기"><img src="assets/images/p3.jpg" alt="팀 프로젝트" loading="lazy" decoding="async"><span class="yth-caption"><small>LEARNING & PROJECT</small><strong>팀 프로젝트</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="함께하는 워크숍 사진 크게 보기"><img src="assets/images/p4.jpg" alt="함께하는 워크숍" loading="lazy" decoding="async"><span class="yth-caption"><small>LEARNING & PROJECT</small><strong>함께하는 워크숍</strong></span></button>
+<button class="yth-field-card wide" type="button" aria-label="함께하는 활동 사진 크게 보기"><img src="assets/images/ythup-field-01.jpg" alt="함께하는 활동" loading="lazy" decoding="async"><span class="yth-caption"><small>LEARNING & PROJECT</small><strong>함께하는 활동</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="수료의 순간 사진 크게 보기"><img src="assets/images/p16.jpg" alt="수료의 순간" loading="lazy" decoding="async"><span class="yth-caption"><small>LEARNING & PROJECT</small><strong>수료의 순간</strong></span></button>
+</div></section>
+<section class="yth-gallery-category" id="yth-category-2" aria-labelledby="yth-category-heading-2">
+<header class="yth-category-head"><div><span class="yth-category-eyebrow">CULTURE & CONNECTION · 02</span><h3 id="yth-category-heading-2">문화와 교류 <small>8 PHOTOS</small></h3><p>취향을 나누고 새로운 경험으로 가까워지는 순간</p></div></header>
+<div class="yth-field-grid">
+<button class="yth-field-card wide" type="button" aria-label="함께 즐기는 문화 시간 사진 크게 보기"><img src="assets/images/ythup-field-05.jpg" alt="함께 즐기는 문화 시간" loading="lazy" decoding="async"><span class="yth-caption"><small>CULTURE & CONNECTION</small><strong>함께 즐기는 문화 시간</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="함께 즐기는 게임 사진 크게 보기"><img src="assets/images/ythup-field-07.jpg" alt="함께 즐기는 게임" loading="lazy" decoding="async"><span class="yth-caption"><small>CULTURE & CONNECTION</small><strong>함께 즐기는 게임</strong></span></button>
+<button class="yth-field-card portrait" type="button" aria-label="우리들의 특별한 하루 사진 크게 보기"><img src="assets/images/ythup-field-10.jpg" alt="우리들의 특별한 하루" loading="lazy" decoding="async"><span class="yth-caption"><small>CULTURE & CONNECTION</small><strong>우리들의 특별한 하루</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="D.I.Y 활동 사진 크게 보기"><img src="assets/images/p5.jpg" alt="D.I.Y 활동" loading="lazy" decoding="async"><span class="yth-caption"><small>CULTURE & CONNECTION</small><strong>D.I.Y 활동</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="함께하는 D.I.Y 사진 크게 보기"><img src="assets/images/p6.jpg" alt="함께하는 D.I.Y" loading="lazy" decoding="async"><span class="yth-caption"><small>CULTURE & CONNECTION</small><strong>함께하는 D.I.Y</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="전시 관람 사진 크게 보기"><img src="assets/images/p7.jpg" alt="전시 관람" loading="lazy" decoding="async"><span class="yth-caption"><small>CULTURE & CONNECTION</small><strong>전시 관람</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="보드게임 모임 사진 크게 보기"><img src="assets/images/p14.jpg" alt="보드게임 모임" loading="lazy" decoding="async"><span class="yth-caption"><small>CULTURE & CONNECTION</small><strong>보드게임 모임</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="연말 모임 사진 크게 보기"><img src="assets/images/p15.jpg" alt="연말 모임" loading="lazy" decoding="async"><span class="yth-caption"><small>CULTURE & CONNECTION</small><strong>연말 모임</strong></span></button>
+</div></section>
+<section class="yth-gallery-category" id="yth-category-3" aria-labelledby="yth-category-heading-3">
+<header class="yth-category-head"><div><span class="yth-category-eyebrow">SPORTS & CHALLENGE · 03</span><h3 id="yth-category-heading-3">체육과 도전 <small>6 PHOTOS</small></h3><p>활기찬 도전 속에 쌓이는 에너지와 팀워크</p></div></header>
+<div class="yth-field-grid">
+<button class="yth-field-card wide" type="button" aria-label="실내 스포츠 모임 사진 크게 보기"><img src="assets/images/ythup-field-04.jpg" alt="실내 스포츠 모임" loading="lazy" decoding="async"><span class="yth-caption"><small>SPORTS & CHALLENGE</small><strong>실내 스포츠 모임</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="겨울 스포츠 체험 사진 크게 보기"><img src="assets/images/ythup-field-08.jpg" alt="겨울 스포츠 체험" loading="lazy" decoding="async"><span class="yth-caption"><small>SPORTS & CHALLENGE</small><strong>겨울 스포츠 체험</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="체육 활동 사진 크게 보기"><img src="assets/images/p8.jpg" alt="체육 활동" loading="lazy" decoding="async"><span class="yth-caption"><small>SPORTS & CHALLENGE</small><strong>체육 활동</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="함께 뛰는 시간 사진 크게 보기"><img src="assets/images/p9.jpg" alt="함께 뛰는 시간" loading="lazy" decoding="async"><span class="yth-caption"><small>SPORTS & CHALLENGE</small><strong>함께 뛰는 시간</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="스포츠 데이 사진 크게 보기"><img src="assets/images/p10.jpg" alt="스포츠 데이" loading="lazy" decoding="async"><span class="yth-caption"><small>SPORTS & CHALLENGE</small><strong>스포츠 데이</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="배드민턴 모임 사진 크게 보기"><img src="assets/images/p11.jpg" alt="배드민턴 모임" loading="lazy" decoding="async"><span class="yth-caption"><small>SPORTS & CHALLENGE</small><strong>배드민턴 모임</strong></span></button>
+</div></section>
+<section class="yth-gallery-category" id="yth-category-4" aria-labelledby="yth-category-heading-4">
+<header class="yth-category-head"><div><span class="yth-category-eyebrow">OUTDOOR & TRAVEL · 04</span><h3 id="yth-category-heading-4">야외와 여행 <small>6 PHOTOS</small></h3><p>함께 걷고 웃으며 남기는 특별한 추억</p></div></header>
+<div class="yth-field-grid">
+<button class="yth-field-card wide" type="button" aria-label="봄날의 야외 나들이 사진 크게 보기"><img src="assets/images/ythup-field-02.jpg" alt="봄날의 야외 나들이" loading="lazy" decoding="async"><span class="yth-caption"><small>OUTDOOR & TRAVEL</small><strong>봄날의 야외 나들이</strong></span></button>
+<button class="yth-field-card portrait" type="button" aria-label="바다를 배경으로 남긴 추억 사진 크게 보기"><img src="assets/images/ythup-field-03.jpg" alt="바다를 배경으로 남긴 추억" loading="lazy" decoding="async"><span class="yth-caption"><small>OUTDOOR & TRAVEL</small><strong>바다를 배경으로 남긴 추억</strong></span></button>
+<button class="yth-field-card wide" type="button" aria-label="전망대에서의 단체 사진 사진 크게 보기"><img src="assets/images/ythup-field-06.jpg" alt="전망대에서의 단체 사진" loading="lazy" decoding="async"><span class="yth-caption"><small>OUTDOOR & TRAVEL</small><strong>전망대에서의 단체 사진</strong></span></button>
+<button class="yth-field-card wide" type="button" aria-label="함께한 야외 활동 사진 크게 보기"><img src="assets/images/ythup-field-09.jpg" alt="함께한 야외 활동" loading="lazy" decoding="async"><span class="yth-caption"><small>OUTDOOR & TRAVEL</small><strong>함께한 야외 활동</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="등산 모임 사진 크게 보기"><img src="assets/images/p12.jpg" alt="등산 모임" loading="lazy" decoding="async"><span class="yth-caption"><small>OUTDOOR & TRAVEL</small><strong>등산 모임</strong></span></button>
+<button class="yth-field-card " type="button" aria-label="러닝 모임 사진 크게 보기"><img src="assets/images/p13.jpg" alt="러닝 모임" loading="lazy" decoding="async"><span class="yth-caption"><small>OUTDOOR & TRAVEL</small><strong>러닝 모임</strong></span></button>
+</div></section>
+</div></div>
         </div>
     </section>
 
