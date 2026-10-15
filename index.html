@@ -1,103 +1,2047 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YTH-UP | 더 큰 가능성의 시작</title><meta name="description" content="청년의 에너지와 가능성을 끌어올리는 YTH-UP. 배움과 성장, 경험이 이어지는 청년들의 공간."><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><style id="ythup-complete-theme">/* YTH-UP 2026 visual refresh */
-:root{--brand-green:#167bd5;--brand-gold:#69c9f5;--brand-gold-light:#edf9ff;--y-dark:#102b4c;--y-blue:#147ad7;--y-cloud:#eef9ff;--y-gold:#e8c78c}
-html{scroll-behavior:smooth}body{background:#f7fbff!important;color:#132e4e!important;font-family:'Noto Sans KR',sans-serif!important} .page-main{padding-top:78px!important}
-.y-nav{height:78px;position:fixed;inset:0 0 auto;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(18px);border-bottom:1px solid #e3eff8;box-shadow:0 5px 24px #2777ad0a}.y-nav-inner{max-width:1240px;height:100%;margin:auto;padding:0 25px;display:flex;align-items:center;gap:20px}.y-logo{width:190px;flex-shrink:0;display:flex;align-items:center}.y-logo img{height:72px;width:190px;object-fit:contain}.y-links{display:flex;align-items:center;justify-content:center;gap:19px;flex:1;white-space:nowrap}.y-links a{font-size:13px;font-weight:700;color:#38536a;text-decoration:none;transition:color .2s}.y-links a:hover{color:#087acc}.y-cta,.y-primary{background:linear-gradient(125deg,#28b2ee,#1168cf);color:white!important;border-radius:999px;padding:13px 20px;text-decoration:none;font-weight:800;box-shadow:0 9px 24px #1281d12b;white-space:nowrap}.y-menu-button{display:none;background:transparent;border:0;color:#174b79;font-size:27px}.y-mobile{display:none}
-body .bg-brand-green{background-color:#d6f1ff!important}body .text-brand-gold{color:#1271b6!important}body .bg-brand-gold{background-color:#55bde9!important}body .border-brand-gold{border-color:#8ed1f1!important}
-body [class*="bg-[#a9def5]"],body [class*="bg-[#b0dbed]"]{background:#e5f6ff!important}body [class*="text-[#a9def5]"]{color:#1769aa!important}body [class*="text-[#c5ebfb]"]{color:#1a9ad6!important}body .animate-gradient-text,body .animate-shine-text{animation:none!important;background:linear-gradient(110deg,#163e79,#299ddb);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.page-main>section{position:relative}.page-main>section:not(.y-hero){border-top:1px solid #e8f2fa}.page-main h2{letter-spacing:-.045em}.page-main .rounded-3xl,.page-main .rounded-2xl{border-radius:24px!important}.page-main .shadow-xl{box-shadow:0 14px 42px #1c75ac13!important} .page-main a{transition:transform .2s ease,box-shadow .2s ease}
-.y-footer{background:#102d4e;color:#b8cfe2;padding:42px 24px}.y-footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}.y-footer strong{color:white;letter-spacing:.08em}.y-footer a{color:#c6e9ff;text-decoration:none}
-.y-wrap{max-width:1220px;margin:auto;padding:0 25px}.y-hero{min-height:640px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 15%,#fff7df 0,transparent 28%),linear-gradient(125deg,#fbfeff 0%,#e5f6ff 53%,#c9e9ff 100%)}.y-hero::after{content:'';position:absolute;width:650px;height:650px;right:-220px;bottom:-380px;border:110px solid #fff8;transform:rotate(-25deg);border-radius:50%}.y-hero-grid{display:grid;grid-template-columns:1fr .94fr;align-items:center;gap:45px;width:100%;padding-top:55px;padding-bottom:55px;position:relative;z-index:1}.y-eyebrow{font-size:12px;letter-spacing:.23em;color:#1787db;font-weight:900}.y-headline{font-size:clamp(37px,4.4vw,67px);line-height:1.27;letter-spacing:-.075em;font-weight:900;color:#102844;margin:20px 0}.y-headline em{font-style:normal;color:#1284dd}.y-intro{font-size:16px;line-height:1.95;color:#557088;max-width:550px}.y-buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.y-secondary{border:1px solid #a5d6ef;color:#126ab1!important;background:#fff;border-radius:999px;padding:12px 22px;text-decoration:none;font-weight:800}.y-pills{display:flex;align-items:center;margin-top:40px}.y-pill{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:54px;padding:14px 24px;border-radius:999px;background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(246,251,255,.88));border:1px solid #cfe4f4;box-shadow:0 10px 24px rgba(26,94,148,.10);color:#28567b;font-size:14px;font-weight:800;letter-spacing:-.01em}.y-pill .pill-text{white-space:nowrap}.y-pill .pill-divider{width:6px;height:6px;border-radius:50%;background:#94c8ee;flex:0 0 auto}.y-visual{position:relative;min-height:455px;display:flex;align-items:center;justify-content:center}.y-photo{width:96%;height:430px;border-radius:190px 190px 44px 44px;object-fit:cover;object-position:center;background:linear-gradient(145deg,#60bcee,#daefff);box-shadow:0 28px 60px #2385c12b}.y-logo-float{position:absolute;top:-28px;right:-4px;background:#fffed;border:1px solid #ffffffb8;box-shadow:0 12px 32px #0d74b422;border-radius:28px;padding:10px}.y-logo-float img{width:145px;height:102px;object-fit:contain}.y-visual-note{position:absolute;bottom:-9px;left:-12px;padding:18px 23px;border-radius:20px;background:#fff;box-shadow:0 20px 40px #1b76b225;color:#154a75;font-weight:800}
-.y-section{padding:78px 0}.y-section:nth-child(odd){background:#f1faff}.y-section-title{font-size:clamp(27px,3.1vw,41px);line-height:1.42;color:#122e50;font-weight:900;letter-spacing:-.055em;margin:10px 0 16px}.y-muted{color:#638096;line-height:1.85}.y-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:35px}.y-card{background:#fff;border:1px solid #e1f1fc;border-radius:24px;padding:27px;box-shadow:0 14px 42px #3287bc10;min-height:220px;display:flex;flex-direction:column;gap:15px}.y-card:hover{transform:translateY(-5px);box-shadow:0 18px 46px #238bcd1c}.y-card:nth-child(even){background:#fffaf1;border-color:#f7ead0}.y-card .y-icon{width:51px;height:51px;border-radius:18px;display:grid;place-items:center;background:#ebf8ff;font-size:26px}.y-card h3{font-size:20px;font-weight:850;color:#16375c}.y-card p{font-size:14px;color:#6a8294;line-height:1.7;flex:1}.y-card a{color:#117bcc;font-weight:800;text-decoration:none;font-size:13px}
-.y-split{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:center}.y-people{display:flex;gap:14px;overflow-x:auto;padding:12px 2px 25px}.y-person{min-width:170px;background:white;border:1px solid #e4f0fa;border-radius:20px;padding:12px;text-align:center}.y-person img{width:100%;height:170px;object-fit:cover;object-position:top;border-radius:14px;background:#e4f6ff}.y-person strong{display:block;margin:12px 0 4px;color:#173d64}.y-person small{color:#647e92}.y-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.y-gallery a{display:block;position:relative;overflow:hidden;border-radius:20px;height:220px;background:#d9edfa}.y-gallery img{width:100%;height:100%;object-fit:cover;transition:transform .3s}.y-gallery a:hover img{transform:scale(1.05)}.y-gallery span{position:absolute;inset:auto 0 0;padding:34px 13px 13px;color:white;font-weight:800;background:linear-gradient(transparent,#0b294bcc)}
-@media(max-width:1100px){.y-links{gap:10px}.y-links a{font-size:12px}.y-logo{width:150px}.y-logo img{width:148px;height:58px}}@media(max-width:900px){.y-links,.y-cta{display:none}.y-menu-button{display:block;margin-left:auto}.y-open .y-mobile{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;padding:16px 24px;background:white;box-shadow:0 12px 20px #1b6eac12}.y-mobile a{text-decoration:none;color:#225785;background:#eff9ff;border-radius:10px;padding:12px;font-size:14px;font-weight:700}.y-hero-grid,.y-split{grid-template-columns:1fr}.y-hero-grid{padding-top:50px;gap:20px}.y-visual{min-height:300px}.y-photo{height:300px;border-radius:35px}.y-grid,.y-gallery{grid-template-columns:repeat(2,1fr)}.y-footer-inner{flex-direction:column;align-items:start}}@media(max-width:580px){.y-nav{height:70px}.page-main{padding-top:70px!important}.y-headline{font-size:38px}.y-hero-grid{padding:34px 20px}.y-intro{font-size:14px}.y-section{padding:55px 0}.y-grid,.y-gallery{grid-template-columns:1fr}.y-gallery a{height:210px}.y-card{min-height:0}.y-logo-float{right:3px;top:-7px}.y-logo-float img{width:95px;height:68px}.y-person{min-width:140px}.y-person img{height:140px}}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
 
-/* Unified YTH-UP 2026 — subpage overhaul, override legacy styles */
-:root{--brand-green:#eaf7ff;--brand-gold:#4aa9df;--brand-gold-light:#eaf8ff}
-*{box-sizing:border-box}
-body{margin:0;background:#f8fcff!important;color:#1b3953!important}
-.page-main{padding-top:78px!important;min-height:70vh}
-.y-nav{background:#ffffffed!important}
-.y-logo img{object-fit:contain}
-.y-links a[aria-current="page"]{color:#0879c7;border-bottom:2px solid #61b9e5;padding-bottom:5px}
-.y-section-heading{position:relative;overflow:hidden;padding:90px 24px 80px;background:linear-gradient(125deg,#fafdff,#e5f6ff 65%,#d7efff);border-bottom:1px solid #d7edf8;text-align:center}
-.y-section-heading:before{content:'';position:absolute;width:400px;height:400px;background:radial-gradient(circle,#c5e9ff99,transparent 70%);right:-130px;top:-180px}
-.y-section-heading>*{position:relative}
-.y-section-heading .y-eyebrow{font-size:13px;letter-spacing:.22em}
-.y-section-heading h1{font-weight:900;font-size:clamp(33px,4.6vw,57px);letter-spacing:-.065em;line-height:1.24;color:#122d4d;margin:16px 0}
-.y-section-heading p{font-size:16px;line-height:1.8;color:#557c98}
-.y-subpage>.y-content-section{background:#f8fcff!important;color:#203b55!important;padding:60px 24px 90px!important;isolation:isolate}
-.y-subpage>.y-content-section>div:not(.absolute){max-width:1180px!important;margin-left:auto!important;margin-right:auto!important}
-.y-subpage .y-content-section h2,.y-subpage .y-content-section h3,.y-subpage .y-content-section h4{color:#163e64!important;-webkit-text-fill-color:initial!important;text-shadow:none!important}
-.y-subpage .y-content-section p,.y-subpage .y-content-section li,.y-subpage .y-content-section blockquote{color:#4e6880!important}
-.y-subpage .y-content-section .text-white{color:#173c61!important}
-.y-subpage .y-content-section .text-gray-400{color:#648299!important}
-.y-subpage .y-content-section [class*="text-brand-gold"],.y-subpage .y-content-section [class*="text-\[var"]{color:#137bc5!important}
-.y-subpage .y-content-section .bg-white\/5,.y-subpage .y-content-section .bg-white\/10,.y-subpage .y-content-section .bg-black\/20,.y-subpage .y-content-section .bg-gray-900,.y-subpage .y-content-section .bg-gray-800{background:#fff!important}
-.y-subpage .y-content-section .border-white\/10,.y-subpage .y-content-section .border-white\/20{border-color:#d9eefa!important}
-.y-subpage .y-content-section a.group>div,.y-subpage .y-content-section .rounded-xl,.y-subpage .y-content-section .rounded-2xl{border-radius:22px!important}
-.y-subpage .y-content-section a.group>div{box-shadow:0 12px 34px #1760a015;border:1px solid #dcedf9!important;background:#fff!important}
-.y-subpage .y-content-section img[src="assets/logos/ythup-brand-final-20261009.png"]{object-fit:contain}
-.y-subpage .y-content-section img{max-width:100%}
-.y-subpage .y-content-section [class*="bg-\["],.y-subpage .y-content-section .bg-brand-green{background-color:#eaf7ff!important}
-.y-subpage .y-content-section .bg-white{background:#fff!important}
-.y-subpage .y-content-section .bg-gray-50,.y-subpage .y-content-section .bg-gray-100{background:#f1f9fe!important}
-.y-subpage .y-content-section a:hover{color:#087bc7}
-.y-subpage .y-content-section .animate-shine-text,.y-subpage .y-content-section .animate-gradient-text{-webkit-text-fill-color:#176fae!important;background:none!important}
-.y-subpage .y-content-section .font-serif{font-family:'Noto Sans KR',sans-serif!important}
-.y-subpage .y-content-section .shadow-inner,.y-subpage .y-content-section .shadow-xl{box-shadow:0 12px 35px #1f80bd11!important}
-.y-subpage .y-content-section .bg-red-600{background:#e15167!important}
-@media(max-width:650px){.y-section-heading{padding:63px 18px 54px}.y-section-heading p{font-size:14px}.y-subpage>.y-content-section{padding:35px 16px 60px!important}}
+    <!-- ===== 검색엔진 SEO ===== -->
+    <title>문화 이음 플랫폼 | 문화 클래스 · 심리상담 · 취미 프로그램</title>
+    <meta name="description" content="문화와 사람을 잇는 문화 이음 플랫폼. 심리상담과 코칭, 원데이클래스, 취미 프로그램과 문화 활동을 만나보세요.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://index-1-ten-delta.vercel.app/">
 
-/* YTH-UP 2D 로고: 헤더는 가로형, 본문은 세로형 */
-.y-logo{width:210px!important;min-width:190px!important}
-.y-logo img{width:210px!important;height:74px!important;object-fit:contain!important;object-position:left center!important}
-.y-logo-float img{object-fit:contain!important}
-@media(max-width:1100px){.y-logo{width:170px!important;min-width:150px!important}.y-logo img{width:170px!important;height:62px!important}}
-@media(max-width:580px){.y-logo{width:150px!important;min-width:140px!important}.y-logo img{width:150px!important;height:58px!important}}
-@media (max-width:640px){.y-pills{margin-top:28px}.y-pill{width:100%;padding:14px 18px;gap:10px;flex-wrap:wrap;row-gap:8px;border-radius:20px;font-size:13px;line-height:1.45}.y-pill .pill-divider{display:none}}</style><style id="ythup-unified-logo-20261009">
-.y-logo{width:190px!important;min-width:150px!important;flex-shrink:0!important}
-.y-logo img{display:block!important;width:190px!important;height:74px!important;object-fit:contain!important;object-position:left center!important}
-@media(max-width:1100px){.y-logo{width:155px!important;min-width:140px!important}.y-logo img{width:155px!important;height:62px!important}}
-@media(max-width:580px){.y-logo{width:140px!important;min-width:125px!important}.y-logo img{width:140px!important;height:58px!important}}
+    <!-- SNS / 카카오톡 공유 정보 -->
+    <meta property="og:title" content="문화 이음 플랫폼">
+    <meta property="og:description" content="문화와 사람을 잇는 심리상담, 원데이클래스, 취미 프로그램을 만나보세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://index-1-ten-delta.vercel.app/">
 
-/* 메인 슬로건: 데스크톱에서는 두 번째 문장 한 줄 유지 */
-.y-hero .y-headline{font-size:clamp(29px,2.85vw,39px);line-height:1.34;letter-spacing:-.055em;word-break:keep-all;}
-@media(min-width:901px){.y-hero .y-headline em{white-space:nowrap;}}
-@media(max-width:900px){.y-hero .y-headline{font-size:clamp(31px,5.4vw,47px);}.y-hero .y-headline em{white-space:normal;}}
-@media(max-width:580px){.y-hero .y-headline{font-size:clamp(28px,7.3vw,36px);line-height:1.35;}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@font-face {
+            font-family: 'Cafe24Dongdong';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Dongdong.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* 폰트 및 기본 리셋 */
+        
+        
+        :root {
+            --primary-purple: #5c2483;
+            --light-purple: #f8f3fc;
+            --dark-bg: #1a1025;
+            --text-dark: #222;
+            --text-gray: #666;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Pretendard', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth; 
+        }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto;}
+
+        /* 상단 헤더 */
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            z-index: 100;
+            color: var(--white);
+            background: linear-gradient(
+                180deg,
+                rgba(15, 10, 20, 0.42) 0%,
+                rgba(15, 10, 20, 0.18) 70%,
+                rgba(15, 10, 20, 0) 100%
+            );
+            border-bottom: 1px solid rgba(255,255,255,0.18);
+        }
+
+        .header-inner {
+            width: 94%;
+            max-width: 1500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .logo {
+            flex-shrink: 0;
+            font-size: 30px;
+            font-weight: 800;
+            letter-spacing: -1.2px;
+            line-height: 1;
+        }
+
+        .logo a {
+            color: #fff;
+            display: inline-block;
+            transition: opacity 0.25s ease;
+        }
+
+        .logo a:hover { opacity: 0.82; }
+
+        nav {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        nav > ul {
+            display: flex;
+            align-items: center;
+            gap: 44px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.4px;
+        }
+
+        nav > ul > li > a {
+            position: relative;
+            display: block;
+            padding: 36px 0;
+            color: rgba(255,255,255,0.95);
+            transition: color 0.25s ease;
+        }
+
+        nav > ul > li > a:hover {
+            color: #e8c8f2;
+        }
+
+        nav > ul > li > a::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 25px;
+            width: 0;
+            height: 2px;
+            background: #e0b6ee;
+            border-radius: 10px;
+            transform: translateX(-50%);
+            transition: width 0.25s ease;
+        }
+
+        nav > ul > li > a:hover::after {
+            width: 100%;
+        }
+
+        .util-menu {
+            margin-left: 35px;
+            font-size: 22px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* 메인 히어로 섹션 */
+        .hero {
+            height: 85vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('메인사진.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+        }
+        .hero h2 { font-size: 18px; font-weight: 400; letter-spacing: 2px; margin-bottom: 15px; text-transform: uppercase; }
+        .hero h1 { font-size: 52px; font-weight: 800; line-height: 1.3; text-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        .hero h1 span { color: #d8b4e2; }
+
+        /* 퀵 링크 바 */
+        .quick-links {
+            background-color: var(--light-purple);
+            padding: 30px 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .quick-inner {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .quick-item { text-align: center; 
+            color: var(--primary-purple); 
+            font-family: 'Cafe24Dongdong', sans-serif; 
+            font-size: 20px; 
+            transition: transform 0.3s}
+        .quick-item:hover { transform: translateY(-5px); }
+        .quick-icon { font-size: 32px; margin-bottom: 10px; display: block; }
+
+        /* 프로그램 포스터 그리드 섹션 */
+        .programs { padding: 80px 0; text-align: center; scroll-margin-top: 100px; }
+        
+        .tabs { margin-bottom: 40px; display: flex; justify-content: center; align-items: center; gap: 20px; }
+        .tabs > span, .tab-dropdown > span { 
+            font-size: 16px; 
+            font-weight: 600; 
+            color: #aaa; 
+            cursor: pointer; 
+            padding: 5px 10px; 
+            border-bottom: 2px solid transparent; 
+            transition: 0.2s; 
+        }
+        .tabs > span.active, .tab-dropdown.active > span { 
+            color: var(--primary-purple); 
+            border-bottom: 2px solid var(--primary-purple); 
+        }
+
+        .tab-dropdown { position: relative; display: inline-block; }
+        .tab-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: #fff;
+            border: 1px solid #eaeaea;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            padding: 10px 0;
+            min-width: 140px;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: all 0.25s ease;
+            z-index: 50;
+            text-align: center;
+        }
+        .tab-dropdown.open .tab-dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+        .tab-dropdown.open > span { color: var(--primary-purple); }
+        .tab-dropdown-menu li {
+            padding: 10px 15px;
+            font-size: 14px;
+            color: var(--text-gray);
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            font-weight: 500;
+        }
+        .tab-dropdown-menu li:hover {
+            color: var(--primary-purple);
+            background: rgba(216, 180, 226, 0.15);
+            font-weight: 700;
+        }
+        
+        .poster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .poster-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            background: #fff;
+            text-align: left;
+        }
+        .poster-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(92, 36, 131, 0.2); }
+        .poster-img {
+            height: 350px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+        }
+        .poster-badge {
+            position: absolute;
+            top: 15px; left: 15px;
+            background: var(--primary-purple);
+            color: #fff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .poster-info { padding: 20px; }
+        .poster-info h3 { font-size: 18px; margin-bottom: 8px; color: var(--text-dark); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .poster-info p { font-size: 13px; color: var(--text-gray); }
+
+        /* 심리상담 코칭 프로그램 상세 */
+        .counseling-section { background: linear-gradient(
+        135deg,
+        #211925 0%,
+        #2b2030 55%,
+        #241b29 100%
+    ); padding: 100px 0; }
+        .counseling-container { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px; }
+        .counseling-card { display: flex; background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.2); scroll-margin-top: 110px; }
+        .counseling-card.reverse { flex-direction: row-reverse; }
+        .counseling-img-wrap { width: 45%; background-size: cover; background-position: center; min-height: 280px; }
+        .counseling-content { width: 55%; padding: 45px 55px; position: relative; display: flex; flex-direction: column; justify-content: center; }
+        .counseling-title-badge { position: absolute; top: 50px; background: #fff; color: #222; padding: 10px 30px; border-radius: 30px; font-size: 20px; font-weight: 800; box-shadow: 0 5px 15px rgba(0,0,0,0.1); z-index: 10; }
+        .counseling-card .counseling-title-badge { left: -45px; }
+        .counseling-card.reverse .counseling-title-badge { right: -45px; left: auto; }
+        .counseling-list { margin-top: 50px; list-style: none; }
+        .counseling-list .list-title { font-weight: 800; font-size: 16px; color: #111; margin-bottom: 12px; padding-left: 12px; border-left: 3px solid #222; }
+        .counseling-list li:not(.list-title) { position: relative; padding-left: 15px; margin-bottom: 6px; font-size: 14px; color: #555; line-height: 1.5; }
+        .counseling-list li:not(.list-title)::before { content: '·'; position: absolute; left: 5px; font-weight: bold; }
+
+        /* 취미원정대 원데이 클래스 섹션 */
+        .hobby-section { padding: 100px 0; background: #fff; scroll-margin-top: 100px; }
+        .hobby-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; flex-wrap: wrap; gap: 20px; }
+        .hobby-title h2 { font-size: 32px; font-weight: 800; color: #000; letter-spacing: -1px; }
+        .hobby-search-area { display: flex; gap: 10px; align-items: center; }
+        .hobby-search-area select, .hobby-search-area input { padding: 10px 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; outline: none; color: #333; }
+        .hobby-search-area button { background: #333; color: #fff; border: none; padding: 10px 18px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+        .hobby-count { font-size: 13px; color: #666; margin-bottom: 25px; display: flex; align-items: center; }
+        .hobby-count::before { content: '▶'; font-size: 10px; color: #aaa; margin-right: 5px; }
+        .hobby-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
+        .hobby-card { background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.03); transition: 0.3s; }
+        .hobby-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .hobby-img-wrap { position: relative; height: 360px; background-size: cover; background-position: center; background-color: #fafafa; }
+        .hobby-badges { position: absolute; top: 15px; right: 15px; display: flex; gap: 5px; }
+        .hobby-badge-year { background: #000; color: #fff; padding: 5px 10px; font-size: 12px; font-weight: 700; border-radius: 6px; }
+        .hobby-badge-cat { background: #9c27b0; color: #fff; padding: 5px 10px; font-size: 12px; font-weight: 700; border-radius: 6px; }
+        .hobby-info { padding: 20px; text-align: center; }
+        .hobby-info h3 { font-size: 18px; color: #222; font-weight: 700; word-break: keep-all; }
+
+
+        /* 신규: 수강 신청서 섹션 */
+        .enrollment-section {
+            padding: 100px 0;
+            background: #f8f9fa; /* 은은한 밝은 회색 배경 */
+            scroll-margin-top: 80px;
+        }
+        .enrollment-wrapper {
+            max-width: 540px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px 45px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+        }
+        .enrollment-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .enrollment-header h2 {
+            font-size: 30px;
+            color: #111;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        .enrollment-header p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #222;
+        }
+        .form-control {
+            width: 100%;
+            padding: 15px 18px;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            background: #fafafa;
+            color: #333;
+        }
+        .form-control::placeholder { color: #aaa; }
+        .form-control:focus {
+            border-color: var(--primary-purple);
+            background: #fff;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(92, 36, 131, 0.1);
+        }
+
+        /* 성별 선택 버튼 스타일 */
+        .gender-group { display: flex; gap: 12px; }
+        .gender-option { flex: 1; position: relative; }
+        .gender-option input { display: none; }
+        .gender-option span {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #eaeaea;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #666;
+            background: #fafafa;
+            transition: all 0.3s ease;
+        }
+        .gender-option input:checked + span {
+            border-color: var(--primary-purple);
+            color: var(--primary-purple);
+            background: rgba(92, 36, 131, 0.05);
+        }
+
+        /* 생년월일 그룹 */
+        .birth-group { display: flex; gap: 12px; }
+        .birth-group .form-control { flex: 1; text-align: center; padding: 15px 10px; }
+
+        /* 약관 동의 체크박스 */
+        .terms-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 35px;
+            margin-top: 15px;
+        }
+        .terms-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--primary-purple);
+            cursor: pointer;
+        }
+        .terms-group label {
+            font-size: 15px;
+            color: #444;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /* 신청 완료 버튼 */
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: var(--primary-purple);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover {
+            background: #4a1d6e;
+            box-shadow: 0 8px 20px rgba(92, 36, 131, 0.25);
+            transform: translateY(-2px);
+        }
+
+
+        /* 소식 섹션 */
+        .notices { padding: 80px 0; background: #fbfbfc; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 28px; color: var(--text-dark); font-weight: 700; }
+        .section-title h2 span { color: var(--primary-purple); }
+        .section-title.white h2 { color: #fff; }
+        
+        .notice-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .notice-card { background: var(--white); padding: 30px; border: 1px solid #eee; border-top: 3px solid var(--primary-purple); border-radius: 8px; transition: 0.2s; }
+        .notice-card:hover { border-color: var(--primary-purple); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .notice-card .tag { font-size: 12px; color: var(--primary-purple); font-weight: bold; margin-bottom: 10px; display: inline-block; }
+        .notice-card h4 { font-size: 16px; margin-bottom: 15px; line-height: 1.4; }
+        .notice-card .date { font-size: 13px; color: #999; }
+
+        /* 다크 갤러리 섹션 */
+        .dark-gallery { background: linear-gradient(135deg, #32154a 0%, var(--dark-bg) 100%); padding: 100px 0; color: var(--white); }
+        .gallery-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; }
+        .gallery-header h2 { font-size: 28px; font-weight: 700; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .gallery-item { height: 250px; border-radius: 8px; background-size: cover; background-position: center; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+        .gallery-item::before { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; background: linear-gradient(transparent, rgba(0,0,0,0.9)); }
+        .gallery-text { position: absolute; bottom: 20px; left: 20px; right: 20px; z-index: 1; }
+        .gallery-text h4 { font-size: 16px; margin-bottom: 5px; }
+        .gallery-text p { font-size: 12px; color: #ccc; }
+
+
+        /* 메인 GNB 드롭다운 메뉴 */
+        nav > ul > li.dropdown { position: relative; }
+        nav > ul > li.dropdown > a { display: block; cursor: pointer; }
+        .dropdown-menu { display: block; position: absolute; top: calc(100% + 18px); left: 50%; transform: translateX(-50%) translateY(-8px); min-width: 220px; padding: 10px 0; background: rgba(20, 12, 28, 0.97); border: 1px solid rgba(255,255,255,0.18); border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.28); opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .25s ease, transform .25s ease, visibility .25s ease; z-index: 200; }
+        .dropdown-menu::before { content: ''; position: absolute; top: -7px; left: 50%; width: 13px; height: 13px; background: rgba(20, 12, 28, 0.97); border-left: 1px solid rgba(255,255,255,0.18); border-top: 1px solid rgba(255,255,255,0.18); transform: translateX(-50%) rotate(45deg); }
+        .dropdown-menu li { width: 100%; }
+        .dropdown-menu a { display: block; padding: 13px 22px; color: #fff; font-size: 15px; font-weight: 500; white-space: nowrap; transition: background .2s ease, color .2s ease, padding-left .2s ease; }
+        .dropdown-menu a:hover { color: #d8b4e2; background: rgba(216,180,226,0.10); padding-left: 28px; }
+        nav > ul > li.dropdown.open .dropdown-menu { opacity: 1; visibility: visible; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+        nav > ul > li.dropdown.open > a { color: #d8b4e2; }
+
+        @media(max-width: 900px) {
+            nav > ul { gap: 18px; font-size: 14px; }
+            .dropdown-menu { min-width: 200px; }
+            .instructor-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            .hobby-header { flex-direction: column; align-items: flex-start; }
+            .hobby-search-area { width: 100%; flex-wrap: wrap; }
+        }
+        @media(max-width: 768px) {
+            .counseling-card, .counseling-card.reverse { flex-direction: column; }
+            .counseling-img-wrap { width: 100%; min-height: 220px; }
+            .counseling-content { width: 100%; padding: 30px; }
+            .counseling-title-badge { position: relative; top: 0; left: 0 !important; right: 0 !important; display: inline-block; margin-bottom: 20px; text-align: center; align-self: flex-start; }
+            .counseling-list { margin-top: 0; }
+            .enrollment-wrapper { padding: 40px 25px; }
+        }
+
+        /* 강사 소개 페이지 */
+        .instructor-section { padding: 95px 0 110px; background: linear-gradient(180deg, #fff 0%, #faf7fc 100%); }
+        .instructor-intro { max-width: 760px; margin: -25px auto 50px; text-align: center; color: #777; font-size: 16px; }
+        .instructor-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .instructor-card { background: #fff; border: 1px solid #eee; border-radius: 18px; overflow: hidden; box-shadow: 0 12px 30px rgba(0,0,0,0.07); transition: transform .3s ease, box-shadow .3s ease; scroll-margin-top: 110px; }
+        .instructor-card:hover { transform: translateY(-8px); box-shadow: 0 18px 38px rgba(92,36,131,0.16); }
+        .instructor-photo { width: 100%; height: 300px; background: #eee; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; color: #aaa; font-size: 14px; }
+        .instructor-photo span { background: rgba(255,255,255,.86); padding: 9px 15px; border-radius: 30px; }
+        .instructor-info { padding: 24px 25px 27px; }
+        .instructor-role { display: inline-block; color: var(--primary-purple); font-size: 12px; font-weight: 700; margin-bottom: 7px; letter-spacing: .2px; }
+        .instructor-info h3 { font-size: 21px; margin-bottom: 8px; color: #222; }
+        .instructor-info p { color: #777; font-size: 14px; }
+
+        @media(max-width: 600px) {
+            .instructor-grid { grid-template-columns: 1fr; }
+            .instructor-photo { height: 330px; }
+        }
+
+        /* 하단 푸터 */
+        footer { background: #111; color: #888; padding: 60px 0; font-size: 14px; }
+        .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; }
+        .footer-logo { font-size: 24px; color: #fff; font-weight: 800; margin-bottom: 20px; }
+        .footer-info p { margin-bottom: 8px; }
+    
+/* ===== 모바일 최적화 ===== */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body,button,input,select,textarea{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif}
+body{word-break:keep-all;overflow-wrap:break-word}
+img{max-width:100%;height:auto}
+
+@media(max-width:768px){
+ .container{width:92%;max-width:100%}
+ header{height:auto;min-height:72px;padding:14px 0}
+ .header-inner{width:92%;flex-direction:column;align-items:center;gap:12px}
+ .logo{font-size:24px;letter-spacing:-.8px;text-align:center}
+ nav{width:100%;margin:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+ nav::-webkit-scrollbar{display:none}
+ nav>ul{width:max-content;min-width:100%;justify-content:flex-start;gap:18px;padding:0 4px;font-size:14px}
+ nav>ul>li>a{padding:9px 0;white-space:nowrap}
+ nav>ul>li>a::after{bottom:2px}
+ .dropdown-menu{position:fixed;top:118px;left:50%;width:min(88vw,320px);min-width:0;max-height:55vh;overflow-y:auto;transform:translateX(-50%) translateY(-8px)}
+ nav>ul>li.dropdown.open .dropdown-menu{transform:translateX(-50%) translateY(0)}
+ .hero{height:72vh;min-height:520px;padding-top:115px}
+ .hero h2{font-size:13px;letter-spacing:1.4px;margin-bottom:12px}
+ .hero h1{font-size:clamp(30px,8.5vw,40px);line-height:1.35;letter-spacing:-1.2px}
+ .programs,.hobby-section,.notices,.dark-gallery,.instructor-section,.enrollment-section{padding-top:65px;padding-bottom:65px}
+ .tabs{gap:10px;flex-wrap:wrap}
+ .poster-grid,.hobby-grid,.notice-grid,.gallery-grid,.instructor-grid{grid-template-columns:1fr}
+ .poster-img{height:300px}
+ .poster-info h3{white-space:normal}
+ .counseling-section{padding:70px 0}
+ .counseling-container{width:100%}
+ .counseling-content{padding:28px 22px}
+ .counseling-title-badge{font-size:18px;transform:none!important;margin-bottom:15px!important}
+ .counseling-content p,.counseling-list li,.hobby-info p,.notice-card,.instructor-info p{overflow-wrap:break-word;word-break:keep-all}
+ .hobby-header{align-items:stretch}
+ .hobby-title h2{font-size:26px;line-height:1.35}
+ .hobby-search-area{display:grid;grid-template-columns:1fr 1fr;width:100%}
+ .hobby-search-area input,.hobby-search-area button{grid-column:1/-1;width:100%;min-width:0}
+ .hobby-img-wrap{height:320px}
+ .enrollment-wrapper{width:100%;padding:34px 20px;border-radius:16px}
+ .enrollment-header h2{font-size:26px}
+ .birth-group{gap:7px}
+ .birth-group .form-control{min-width:0;padding:14px 5px;font-size:14px}
+ .gallery-header,.footer-inner{flex-direction:column;align-items:flex-start}
+ .gallery-item{height:260px}
+ footer{padding:45px 0}
+ #popup>div{width:min(94vw,500px)!important;max-height:92vh}
+ #popup img{max-height:calc(92vh - 58px);object-fit:contain}
+}
+@media(max-width:390px){
+ .logo{font-size:22px}
+ nav>ul{font-size:13px;gap:15px}
+ .hero h1{font-size:29px}
+ .hero h2{font-size:12px}
+ .section-title h2{font-size:24px}
+ .hobby-title h2{font-size:23px}
+ .poster-img{height:270px}
+ .hobby-img-wrap{height:285px}
+}
+
+
+        /* 수강신청서 입력 검증 */
+        .form-error-label {
+            color: #d93025 !important;
+        }
+        .form-control.input-error {
+            border-color: #d93025 !important;
+            background: #fff7f7 !important;
+            box-shadow: 0 0 0 3px rgba(217,48,37,0.08) !important;
+        }
+        .gender-group.input-error .gender-option span {
+            border-color: #d93025 !important;
+            color: #d93025 !important;
+            background: #fff7f7 !important;
+        }
+        .terms-group.input-error label {
+            color: #d93025 !important;
+            font-weight: 700;
+        }
+        .enrollment-success {
+            display: none;
+            margin-top: 18px;
+            padding: 16px 18px;
+            border-radius: 10px;
+            background: #f3eaf8;
+            color: #5c2483;
+            font-size: 17px;
+            font-weight: 800;
+            text-align: center;
+        }
+        .enrollment-success.show {
+            display: block;
+        }
+
+    </style>
+
+
+
+
+<style>
+/* ===== 심리상담 코칭 프로그램 FINAL DESIGN ===== */
+.counseling-section {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 14% 18%, rgba(137, 101, 145, 0.08), transparent 31%),
+        radial-gradient(circle at 88% 82%, rgba(193, 170, 155, 0.10), transparent 34%),
+        linear-gradient(135deg, #FAF8F5 0%, #F7F3F7 52%, #F3EEF4 100%) !important;
+    padding: 110px 0 120px !important;
+}
+
+.counseling-section::before {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    top: -190px;
+    right: -90px;
+    background: rgba(121, 82, 130, 0.045);
+    pointer-events: none;
+}
+
+.counseling-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.counseling-section .section-title {
+    color: #29252B !important;
+    font-size: clamp(30px, 3vw, 42px) !important;
+    font-weight: 800 !important;
+    letter-spacing: -1.4px !important;
+    margin-bottom: 58px !important;
+}
+
+.counseling-section .section-title span {
+    color: #795282 !important;
+    font-weight: 800 !important;
+}
+
+/* 상담 프로그램 메인 카드 */
+.counseling-card,
+.counseling-content,
+.counseling-item {
+    border-radius: 26px !important;
+}
+
+/* 상담 영역 안의 흰색 콘텐츠 박스에 자연스러운 깊이감 */
+.counseling-section [style*="background-color: white"],
+.counseling-section [style*="background: white"],
+.counseling-section [style*="background:#fff"],
+.counseling-section [style*="background: #fff"] {
+    box-shadow: 0 20px 55px rgba(53, 42, 56, 0.10) !important;
+}
+
+/* 이미지가 카드와 자연스럽게 이어지도록 */
+.counseling-section img {
+    display: block;
+}
+
+/* TCI & DISC 등 배지/제목의 톤 정리 */
+.counseling-section .badge,
+.counseling-section .program-tag,
+.counseling-section .counseling-badge {
+    background: rgba(255,255,255,0.96) !important;
+    color: #2D2830 !important;
+    box-shadow: 0 8px 24px rgba(57, 43, 60, 0.10) !important;
+}
+
+/* 설명 박스의 보라 포인트를 채도 낮은 모브로 통일 */
+.counseling-section blockquote,
+.counseling-section .description-box,
+.counseling-section .program-description {
+    border-color: #795282 !important;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+    .counseling-section {
+        padding: 72px 0 82px !important;
+    }
+
+    .counseling-section .section-title {
+        font-size: 30px !important;
+        line-height: 1.25 !important;
+        margin-bottom: 36px !important;
+    }
+
+    .counseling-card,
+    .counseling-content,
+    .counseling-item {
+        border-radius: 20px !important;
+    }
+}
 </style>
 
-<style id="ythup-nav-font-upgrade-20261012">
-/* 더 선명한 전체 상단 카테고리 및 모바일 메뉴 */
-.y-nav-inner {max-width:1320px !important; gap:14px !important;}
-.y-links {gap:clamp(9px,1.1vw,17px) !important;}
-.y-links a {font-size:15px !important; font-weight:800 !important; letter-spacing:-.035em;}
-.y-mobile a {font-size:16px !important; font-weight:800 !important; line-height:1.5; padding:14px 13px !important;}
-@media (min-width:1121px) and (max-width:1260px) {
-  .y-links {gap:10px !important;}
-  .y-logo {width:150px !important; min-width:150px !important;}
-  .y-logo img {width:150px !important;}
-  .y-cta {padding:12px 14px !important;}
+
+<style>
+/* ===== 강사진 사진 프레임 최종 정렬 ===== */
+.instructor-photo {
+    width: 100% !important;
+    height: 300px !important;
+    overflow: hidden !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-color: #f3f3f3 !important;
 }
-/* 메뉴가 빽빽해지는 폭에서는 모바일 메뉴로 자연스럽게 전환 */
-@media (max-width:1120px) {
-  .y-links, .y-cta {display:none !important;}
-  .y-menu-button {display:block !important; margin-left:auto;}
-  .y-open .y-mobile {display:grid !important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:16px 24px;background:#fff;box-shadow:0 12px 20px #1b6eac12;}
+
+/* 가로 사진은 얼굴이 중앙에 오도록, 세로 사진은 상단 얼굴 중심으로 개별 조정 */
+.photo-kang .instructor-photo { background-position: center 22% !important; }
+.photo-seo  .instructor-photo { background-position: center 34% !important; }
+.photo-yoon .instructor-photo { background-position: center 25% !important; }
+.photo-kim  .instructor-photo { background-position: center 30% !important; }
+.photo-choi .instructor-photo { background-position: center 18% !important; }
+.photo-park .instructor-photo { background-position: center 30% !important; }
+.photo-jung .instructor-photo { background-position: center 18% !important; }
+.photo-lee  .instructor-photo { background-position: center 16% !important; }
+
+/* 카드 비율과 하단 정보 영역도 일정하게 */
+.instructor-card {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 0 !important;
+}
+.instructor-info {
+    flex: 1;
+}
+
+/* 모바일에서도 동일한 인물 중심 유지 */
+@media (max-width: 768px) {
+    .instructor-photo {
+        height: 320px !important;
+    }
 }
 </style>
-<style id="yth-card-photo-redesign">
-/* 2026 YTH-UP: 메인 소개 4카드 사진형 리디자인 */
-.y-grid{gap:20px!important;align-items:stretch}
-.y-grid>.y-card{padding:19px 19px 26px!important;min-height:420px!important;border-radius:25px!important;text-align:center!important;align-items:center!important;gap:0!important;overflow:hidden;box-shadow:0 14px 32px rgba(29,96,137,.075)!important;transition:transform .25s ease,box-shadow .25s ease!important}
-.y-grid>.y-card:hover{transform:translateY(-5px);box-shadow:0 19px 38px rgba(29,96,137,.14)!important}
-.y-card-photo{width:100%;height:180px;overflow:hidden;border-radius:17px;background:#f4f8fa;margin-bottom:28px}
-.y-card-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;transition:transform .35s ease}
-.y-card:hover .y-card-photo img{transform:scale(1.035)}
-.y-grid>.y-card h3{margin:0 0 25px!important;font-size:21px!important;line-height:1.45!important;text-align:center!important}
-.y-grid>.y-card p{margin:0!important;flex:1!important;width:100%;font-size:14px!important;line-height:1.9!important;text-align:center!important;word-break:keep-all;color:#607d94!important}
-.y-grid>.y-card a{margin-top:25px!important;text-align:center!important;font-size:14px!important}
-@media(max-width:1050px){.y-card-photo{height:165px}.y-grid>.y-card{min-height:390px!important}}
-@media(max-width:580px){.y-grid>.y-card{min-height:0!important;padding:19px 19px 27px!important}.y-card-photo{height:210px}.y-grid>.y-card p{flex:0!important}.y-grid>.y-card a{margin-top:28px!important}}
-@media(prefers-reduced-motion:reduce){.y-grid>.y-card,.y-card-photo img{transition:none!important}}
-</style></head><body><nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="assets/logos/ythup-brand-final-20261009.png" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html" aria-current="page">홈</a><a href="about.html">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">Nov.5</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">수강후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html" aria-current="page">홈</a><a href="about.html">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">Nov.5</a><a href="curriculum.html">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">수강후기</a><a href="contact.html">상담 신청</a></div></nav><main class="page-main"><section class="y-hero"><div class="y-wrap y-hero-grid"><div><div class="y-eyebrow">YOUTH GROWTH · HIGHER TOMORROW</div><h1 class="y-headline">지금의 나를 넘어,<br><em>더 큰 가능성을 만나는 곳</em></h1><p class="y-intro">청년이 자신의 가능성을 발견하고, 사람과 경험을 통해 한 걸음 더 성장하는 곳.<br>당신의 새로운 시작을 YTH-UP이 함께합니다.</p><div class="y-buttons"><a class="y-primary" href="contact.html">지금 시작하기 ↗</a><a class="y-secondary" href="about.html">YTH-UP 알아보기 →</a></div><div class="y-pills"><div class="y-pill" aria-label="함께하는 성장, 새로운 가능성, 진짜 연결"><span class="pill-text">함께하는 성장</span><span class="pill-divider" aria-hidden="true"></span><span class="pill-text">새로운 가능성</span><span class="pill-divider" aria-hidden="true"></span><span class="pill-text">진짜 연결</span></div></div></div><div class="y-visual"><img class="y-photo" src="assets/images/p1.jpg" alt="YTH-UP 청년 활동 사진" onerror="this.onerror=null;this.src='assets/images/p2.jpg'"><div class="y-visual-note">지금, 더 높은 나를 향해 ↗</div></div></div></section><section class="y-section"><div class="y-wrap"><div class="y-eyebrow">EXPLORE PROGRAMS</div><h2 class="y-section-title">지금, 더 나은 나를 만드는<br><span style="color:#1178cb">YTH-UP의 여정</span></h2><p class="y-muted">관심 있는 메뉴를 선택해 자세한 내용을 만나보세요.</p><div class="y-grid"><article class="y-card"><div class="y-card-photo"><img alt="펼쳐진 책에서 자라나는 새싹" loading="lazy" src="assets/images/card-learning.jpg"/></div><h3>배움과 성장</h3><p>새로운 생각과 시야를 넓히는<br/>배움의 시간</p><a href="curriculum.html">자세히 보기 ↗</a></article><article class="y-card"><div class="y-card-photo"><img alt="거울을 바라보며 자신을 발견하는 청년" loading="lazy" src="assets/images/card-self-discovery.jpg"/></div><h3>자기 발견</h3><p>내가 원하는 방향을 발견하는 과정</p><a href="about.html">자세히 보기 ↗</a></article><article class="y-card"><div class="y-card-photo"><img alt="카페에서 대화하며 서로 연결되는 청년들" loading="lazy" src="assets/images/card-connection.jpg"/></div><h3>사람과 연결</h3><p>함께 이야기하고 경험을 나누는 만남</p><a href="instructors.html">자세히 보기 ↗</a></article><article class="y-card"><div class="y-card-photo"><img alt="산 정상에서 새로운 도전을 시작하는 청년" loading="lazy" src="assets/images/card-challenge.jpg"/></div><h3>도전과 경험</h3><p>작은 도전을 내일의 변화로</p><a href="gallery.html">자세히 보기 ↗</a></article></div></div></section><section class="y-section"><div class="y-wrap y-split"><div><div class="y-eyebrow">PEOPLE · CONNECTION</div><h2 class="y-section-title">함께 만드는 더 큰 성장,<br><span style="color:#1178cb">사람이 곧 가능성</span></h2><p class="y-muted">서로 다른 경험을 가진 강사진과 함께 배우고, 질문하고, 성장하는 시간을 만나보세요.</p><div class="y-buttons"><a class="y-secondary" href="instructors.html">강사진 만나보기 ↗</a></div></div><div class="y-people"><div class="y-person"><img src="assets/profiles/profile_lee.jpg" alt="강보라 강사"><strong>강보라 강사</strong><small>함께하는 강사진</small></div><div class="y-person"><img src="assets/profiles/profile-placeholder.svg" alt="강사진 프로필"><strong>강사진</strong><small>다양한 시선과 경험</small></div><div class="y-person"><img src="assets/profiles/profile-placeholder.svg" alt="강사진 프로필"><strong>멘토진</strong><small>함께하는 성장</small></div></div></div></section><section class="y-section"><div class="y-wrap"><div class="y-eyebrow">GALLERY</div><h2 class="y-section-title">오늘의 경험이<br><span style="color:#147ad7">내일의 가능성으로</span></h2><p class="y-muted">함께했던 순간들을 만나보세요.</p><div class="y-gallery"><a href="gallery.html"><img src="assets/images/p2.jpg" alt="YTH-UP 활동 사진 2" loading="lazy"><span>함께 배우는 시간 ↗</span></a><a href="gallery.html"><img src="assets/images/p3.jpg" alt="YTH-UP 활동 사진 3" loading="lazy"><span>서로를 만나는 순간 ↗</span></a><a href="gallery.html"><img src="assets/images/p4.jpg" alt="YTH-UP 활동 사진 4" loading="lazy"><span>새로운 도전 ↗</span></a><a href="gallery.html"><img src="assets/images/p5.jpg" alt="YTH-UP 활동 사진 5" loading="lazy"><span>우리의 이야기 ↗</span></a></div></div></section></main><footer class="y-footer"><div class="y-footer-inner"><div><strong>YTH-UP</strong><p style="margin-top:8px;font-size:13px">청년의 에너지와 가능성을 끌어올리다.</p></div><div style="font-size:13px"><a href="about.html">소개</a>　·　<a href="curriculum.html">커리큘럼</a>　·　<a href="contact.html">상담 신청</a></div></div></footer></body></html>
+
+
+    <style id="culture-platform-footer-update">
+        .site-footer {
+            background: #111111;
+            color: #8f9aa6;
+            padding: 54px 0;
+            font-size: 14px;
+        }
+        .site-footer .footer-inner {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 32px;
+        }
+        .site-footer .footer-brand {
+            flex: 1 1 55%;
+            min-width: 260px;
+        }
+        .site-footer .footer-logo {
+            margin: 0 0 22px;
+            color: #f7f8fa;
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .site-footer .footer-info p {
+            margin: 0 0 8px;
+            line-height: 1.75;
+        }
+        .site-footer .footer-copyright {
+            margin-top: 10px !important;
+        }
+        .site-footer .footer-contact {
+            flex: 0 1 42%;
+            min-width: 260px;
+            text-align: right;
+            padding-top: 0;
+        }
+        .site-footer .footer-contact strong {
+            color: #aab5c1;
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .site-footer {
+                padding: 40px 0;
+            }
+            .site-footer .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            .site-footer .footer-brand,
+            .site-footer .footer-contact {
+                width: 100%;
+                min-width: 0;
+                flex: 1 1 auto;
+            }
+            .site-footer .footer-contact {
+                text-align: left;
+            }
+            .site-footer .footer-logo {
+                font-size: 23px;
+                margin-bottom: 14px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+ <!-- =========================
+     메인 팝업 시작
+========================== -->
+<div id="popup" style="
+    position:fixed;
+    inset:0;
+    background:rgba(15,10,20,0.68);
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+    z-index:9999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+">
+
+    <!-- 팝업 박스 -->
+    <div id="popupBox" style="
+        position:relative;
+        width:min(500px, 92vw);
+        background:transparent;
+        border-radius:16px;
+        overflow:hidden;
+        box-shadow:0 20px 60px rgba(0,0,0,0.4);
+    ">
+
+        <!-- X 버튼 -->
+        <button
+            type="button"
+            aria-label="팝업 닫기"
+            onclick="closeMainPopup()"
+            style="
+                position:absolute;
+                top:12px;
+                right:12px;
+                width:42px;
+                height:42px;
+                border:1px solid rgba(255,255,255,0.55);
+                border-radius:50%;
+                background:rgba(35,35,35,0.55);
+                backdrop-filter:blur(8px);
+                -webkit-backdrop-filter:blur(8px);
+                color:#fff;
+                font-size:25px;
+                font-weight:300;
+                line-height:38px;
+                cursor:pointer;
+                z-index:10;
+                box-shadow:0 4px 14px rgba(0,0,0,0.22);
+                transition:all 0.2s ease;
+            "
+            onmouseover="
+                this.style.background='rgba(92,36,131,0.9)';
+                this.style.transform='scale(1.06)';
+            "
+            onmouseout="
+                this.style.background='rgba(35,35,35,0.55)';
+                this.style.transform='scale(1)';
+            "
+        >
+            ×
+        </button>
+
+
+        <!-- 팝업 이미지 -->
+        <img
+            src="팝업/팝업 사진.jpg"
+            alt="문화이음플랫폼 이벤트 팝업"
+            style="
+                width:100%;
+                height:auto;
+                display:block;
+                margin:0;
+                padding:0;
+            "
+        >
+
+
+        <!-- 하단 버튼 -->
+        <div style="
+            display:flex;
+            width:100%;
+            height:58px;
+            margin:0;
+            padding:0;
+            background:#fff;
+            border-top:1px solid #eeeeee;
+        ">
+
+            <!-- 닫기 -->
+            <button
+                type="button"
+                onclick="closeMainPopup()"
+                style="
+                    flex:1;
+                    height:58px;
+                    margin:0;
+                    padding:0;
+                    border:0;
+                    border-right:1px solid #eeeeee;
+                    background:#fff;
+                    color:#222;
+                    font-family:'Pretendard',sans-serif;
+                    font-size:15px;
+                    font-weight:700;
+                    cursor:pointer;
+                "
+                onmouseover="this.style.background='#f7f4f9'"
+                onmouseout="this.style.background='#fff'"
+            >
+                닫기
+            </button>
+
+
+            <!-- 일주일 동안 보지 않기 -->
+            <button
+                type="button"
+                onclick="hideMainPopupForWeek()"
+                style="
+                    flex:1.35;
+                    height:58px;
+                    margin:0;
+                    padding:0;
+                    border:0;
+                    background:#fff;
+                    color:#5c2483;
+                    font-family:'Pretendard',sans-serif;
+                    font-size:15px;
+                    font-weight:700;
+                    cursor:pointer;
+                "
+                onmouseover="this.style.background='#f7f4f9'"
+                onmouseout="this.style.background='#fff'"
+            >
+                일주일 동안 보지 않기
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- =========================
+     메인 팝업 끝
+========================== -->
+
+
+<script>
+
+    /* 그냥 닫기 */
+    function closeMainPopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+
+    /* 일주일 동안 보지 않기 */
+    function hideMainPopupForWeek() {
+
+        const hideUntil =
+            Date.now() + (7 * 24 * 60 * 60 * 1000);
+
+        localStorage.setItem(
+            'culturePopupHideUntil',
+            hideUntil
+        );
+
+        closeMainPopup();
+    }
+
+
+    /* 사이트 접속 시 일주일 숨김 여부 확인 */
+    (function () {
+
+        const hideUntil = Number(
+            localStorage.getItem('culturePopupHideUntil') || 0
+        );
+
+        if (hideUntil > Date.now()) {
+
+            document.getElementById('popup').style.display = 'none';
+
+        } else if (hideUntil) {
+
+            localStorage.removeItem('culturePopupHideUntil');
+
+        }
+
+    })();
+
+</script>
+ 
+
+    <!-- 여기부터 원래 홈페이지 내용 -->
+    <!-- 헤더 -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo"><a href="#">문화 이음 플랫폼</a></div>
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" id="platformMenu" aria-haspopup="true" aria-expanded="false">
+                            문화 이음 플랫폼이란?
+                        </a>
+                        <ul class="dropdown-menu" aria-label="문화 이음 플랫폼 소개">
+                            <li><a href="#greeting">대표 인사말</a></li>
+                            <li><a href="#purpose">문화이음플랫폼 설립 취지</a></li>
+                            <li><a href="#seoul">서울 문화 이음 플랫폼</a></li>
+                            <li><a href="#busan">부산 문화 이음 플랫폼</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" id="instructorMenu" aria-haspopup="true" aria-expanded="false">
+                            Instructor
+                        </a>
+                        <ul class="dropdown-menu" aria-label="강사 소개">
+                            <li><a href="#instructor-bora">대표강사 : 강보라(예술 인문학)</a></li>
+                            <li><a href="#instructor-kyungseok">강사 : 서경석(TCI, DISC)</a></li>
+                            <li><a href="#instructor-yoonha">강사 : 이윤하(컬러 테라피)</a></li>
+                            <li><a href="#instructor-kihyun">강사 : 김기현(명리학, 타로)</a></li>
+                            <li><a href="#instructor-yujin">강사 : 최유진(이미지 메이킹)</a></li>
+                            <li><a href="#instructor-aesoon">강사 : 박애순(북테라피)</a></li>
+                            <li><a href="#instructor-hyeyoung">강사 : 정혜영(사진강좌)</a></li>
+                            <li><a href="#instructor-gwangpyeong">강사 : 이광평(뇌과학)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" id="artsMenu" aria-haspopup="true" aria-expanded="false">
+                            예술 인문학
+                        </a>
+                        <ul class="dropdown-menu" aria-label="예술 인문학 카테고리">
+                            <li><a href="#programs-grid">미술인문학</a></li>
+                            <li><a href="#programs-grid">고전인문학</a></li>
+                            <li><a href="#programs-grid">음악인문학</a></li>
+                            <li><a href="#programs-grid">영화인문학</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" id="counselingMenu" aria-haspopup="true" aria-expanded="false">
+                            심리상담
+                        </a>
+                        <ul class="dropdown-menu" aria-label="심리상담 카테고리">
+                            <li><a href="#counseling-tci">TCI & DISC</a></li>
+                            <li><a href="#counseling-color">컬러 테라피</a></li>
+                            <li><a href="#counseling-book">북테라피</a></li>
+                            <li><a href="#counseling-tarot">명리학, 타로</a></li>
+                            <li><a href="#counseling-image">이미지 메이킹</a></li>
+                            <li><a href="#counseling-photo">사진강좌</a></li>
+                            <li><a href="#counseling-brain">뇌과학</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#hobby-section" id="hobbyMenu" aria-haspopup="true" aria-expanded="false">
+                            취미원정대 : 원데이 클래스
+                        </a>
+                        <ul class="dropdown-menu" aria-label="취미원정대 카테고리">
+                            <li><a href="#hobby-section">아로마 테라피 : 북 퍼퓸 만들기</a></li>
+                            <li><a href="#hobby-section">요리조리 쿠킹클래스</a></li>
+                            <li><a href="#hobby-section">플라워 아트 클래스</a></li>
+                            <li><a href="#hobby-section">세븐브릿지 드라이빙 투어</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- 수정됨: 수강신청 안내 -> 수강신청서 (클릭 시 이동) -->
+                    <li><a href="#enrollment-section">수강신청서</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- 메인 히어로 -->
+    <section class="hero">
+        <div class="container">
+            <h2>Culture & Mind Connection</h2>
+            <h1>예술과 심리가 만나<br><span>문화의 빛을 밝히다</span></h1>
+        </div>
+    </section>
+
+
+    <!-- 프로그램 포스터 갤러리 -->
+    <section id="programs-grid" class="programs">
+        <div class="container">
+            <div class="tabs" style="margin-top: -35px; margin-bottom: 25px;">
+                <span class="active" style="font-size: 22px; font-weight: 800; color: var(--primary-purple, #5b21b6); padding-bottom: 6px; border-bottom: 3px solid var(--primary-purple, #5b21b6);"">예술 인문학</span>
+                <div class="tab-dropdown">
+                    
+                </div>
+               
+            </div>
+            
+            <div class="poster-grid">
+                <div class="poster-card">
+                    <div class="poster-badge">미술인문학</div>
+                    <div class="poster-img" style="background-image: url('https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="poster-info">
+                        <h4 style="text-align: center;">캔버스 너머에 담긴 시대의 숨결과 인간의 철학을 읽어내는 눈</h4>
+                                            </div>
+                </div>
+                <div class="poster-card">
+                    <div class="poster-badge">고전인문학</div>
+                    <div class="poster-img" style="background-image: url('https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="poster-info">
+                        <h4 style="text-align: center;">시공간을 뛰어넘어 변하지 않는 삶의 본질과 지혜를 발견하는 여정</h4>
+                        
+                    </div>
+                </div>
+                <div class="poster-card">
+                    <div class="poster-badge">음악인문학</div>
+                    <div class="poster-img" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="poster-info">
+                        <h4 style="text-align: center;">선율 뒤에 숨겨진 시대의 울림과 인간의 깊은 내면을 경청하는 소리의 성찰</h4>
+                                            </div>
+                </div>
+                <div class="poster-card">
+                    <div class="poster-badge">영화인문학</div>
+                    <div class="poster-img" style="background-image: url('https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="poster-info">
+                        <h4 style="text-align: center;">스크린이라는 창을 통해 타인의 삶을 마주하고 현대 사회와 나를 비춰보는 거울</h4>
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 심리상담 코칭 프로그램 상세 -->
+    <section class="counseling-section">
+        <div class="container">
+            <div class="section-title white">
+                <h2>심리상담 <span>코칭 프로그램</span></h2>
+            </div>
+            
+            <div class="counseling-container">
+                <article id="counseling-tci" class="counseling-card">
+                    <div class="counseling-img-wrap" style="background-image: url('심리 상담/TCI & DISC.jpg');"></div>
+                    <div class="counseling-content">
+                        <div class="counseling-title-badge" style="transform: translateY(-35px); margin-bottom: -20px; display: inline-block;">TCI & DISC</div>
+                         <p style="margin-top: 35px; font-size: 14px; color: #444; line-height: 1.7; word-break: keep-all; background: #f8f3fc; padding: 15px; border-radius: 10px; border-left: 4px solid var(--primary-purple);">
+                            타고난 생물학적 기질과 후천적으로 형성된 성격을 구분하여 개인의 인성을 다각도로 측정하는 심리검사인 <strong>TCI</strong>와, 사람의 행동 유형을 4가지 범주로 분류하여 개인이 일상 및 업무 상황에서 나타내는 고유한 행동 방식을 측정하는 심리검사 <strong>DISC</strong>를 통해 당신이 누구인지 알려드립니다.
+                        </p>
+                        <ul class="counseling-list">
+                            <li class="list-title">기질과 성격의 완벽한 이해를 통한 관계 개선 코칭</li>
+                            <li>개인의 타고난 기질과 환경적 성격 구조 심층 분석</li>
+                            <li>조직과 가족의 온도를 바꾸는 DISC 소통법 솔루션 제공</li>
+                            <li>자아 탐색 및 타인에 대한 수용력 증진 훈련</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="counseling-color" class="counseling-card reverse">
+                    <div class="counseling-img-wrap" style="background-image: url('심리 상담/컬러테라피.jpg');"></div>
+                    <div class="counseling-content">
+                        <div class="counseling-title-badge" style="transform: translateY(-35px); margin-bottom: -20px; display: inline-block;">컬러 테라피</div>
+                        <div style="margin-top: 35px; background: #faf8fc; padding: 18px 20px; border-radius: 12px; border: 1px solid #eee; border-right: 4px solid var(--primary-purple);">
+                            <p style="font-size: 15px; font-weight: 700; color: var(--primary-purple); margin-bottom: 8px; word-break: keep-all;">
+                                “색을 통해 나를 만나고,<br>색을 통해 마음을 들여다보는 시간입니다.”
+                            </p>
+                            <p style="font-size: 13.5px; color: #555; line-height: 1.6; word-break: keep-all; margin: 0;">
+                                컬러 테라피는 색이 주는 심리적·정서적 자극을 활용하여 자신의 감정을 이해하고 마음을 돌아보도록 돕는 활동입니다.
+                            </p>
+                        </div>
+                        <ul class="counseling-list">
+                            <li class="list-title">색채와 도형으로 찾는 나의 무의식과 마음 상태 진단</li>
+                            <li>현재의 스트레스 지수 파악 및 심리적 이완 훈련</li>
+                            <li>에너지 밸런스를 맞추는 나만의 컬러 솔루션</li>
+                            <li>심신 안정을 돕는 맞춤형 아트 테라피 코칭</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="counseling-book" class="counseling-card">
+                    <div class="counseling-img-wrap" style="background-image: url('심리 상담/북테라피.jpg');"></div>
+                    <div class="counseling-content">
+                        <div class="counseling-title-badge" style="transform: translateY(-35px); margin-bottom: -20px; display: inline-block;">북테라피</div>
+                        <div style="margin-top: 35px; background: #faf8fc; padding: 18px 20px; border-radius: 12px; border: 1px solid #eee; border-left: 4px solid var(--primary-purple);">
+                            <p style="font-size: 14px; color: #444; line-height: 1.7; word-break: keep-all; margin: 0;">
+                                책을 읽는 과정을 통해 마음의 상처를 치유하고, 심리적 안정과 성장을 도모하는 심리 치유 방법입니다.<br><br>
+                                단순히 지식을 쌓기 위한 독서가 아니라, 문학 작품이나 에세이 등의 글로 <strong>자신을 되돌아보는 프로그램</strong>입니다.
+                            </p>
+                        </div>
+                        <ul class="counseling-list">
+                            <li class="list-title">문학을 통해 내면의 상처를 치유하고 성찰하는 시간</li>
+                            <li>깊이 있는 독서 모임을 통한 공감과 소통 능력 강화</li>
+                            <li>책 속의 문장으로 나만의 자아 발견 및 가치관 정립</li>
+                            <li>생각을 정리하고 마음을 비우는 글쓰기 병행 과정</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="counseling-tarot" class="counseling-card reverse">
+                    <div class="counseling-img-wrap" style="background-image: url('심리 상담/명리학, 타로.jpg');"></div>
+                    <div class="counseling-content">
+                        <div class="counseling-title-badge" style="transform: translateY(-35px); margin-bottom: -20px; display: inline-block;">명리학, 타로</div>
+                        <div style="margin-top: 35px; background: #faf8fc; padding: 18px 20px; border-radius: 12px; border: 1px solid #eee; border-right: 4px solid var(--primary-purple);">
+                            <p style="font-size: 14px; color: #444; line-height: 1.7; word-break: keep-all; margin: 0;">
+                                타로는 <strong>78장의 상징적인 그림 카드</strong>를 활용하여 질문자의 무의식, 현재 상황, 그리고 미래의 가능성을 비추어 보는 통찰 도구입니다.<br><br>
+                                카드가 지닌 고유한 상징과 배치 관계를 해석함으로써 직면한 문제에 대한 새로운 관점과 해결의 힌트를 얻을 수 있습니다.
+                            </p>
+                        </div>
+                        <ul class="counseling-list">
+                            <li class="list-title">동양 철학과 타로 상징을 활용한 삶의 통찰 및 방향성 탐색</li>
+                            <li>불확실한 미래에 대한 심리적 안정감 및 자존감 회복</li>
+                            <li>내면의 잠재력을 일깨우는 스토리텔링 상담</li>
+                            <li>선택의 기로에서 합리적 결정을 돕는 직관적 코칭</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="counseling-image" class="counseling-card">
+                    <div class="counseling-img-wrap" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="counseling-content">
+                        <div class="counseling-title-badge" style="transform: translateY(-35px); margin-bottom: -20px; display: inline-block;">이미지 메이킹</div>
+                        <div style="margin-top: 35px; background: #faf8fc; padding: 18px 20px; border-radius: 12px; border: 1px solid #eee; border-left: 4px solid var(--primary-purple);">
+                            <p style="font-size: 15px; font-weight: 700; color: var(--primary-purple); margin-bottom: 8px; word-break: keep-all;">
+                                "나만의 분위기를 디자인하다"
+                            </p>
+                            <p style="font-size: 14px; color: #444; line-height: 1.7; word-break: keep-all; margin: 0;">
+                                이미지 메이킹은 나를 꾸미는 것이 아니라 <strong>나의 가치를 발견하고 표현하는 과정</strong>입니다.<br>
+                                나를 알고, 나를 표현하고, 나만의 아름다움을 완성해봅시다.
+                            </p>
+                        </div>
+                        <ul class="counseling-list">
+                            <li class="list-title">내면의 자신감을 외면으로 자연스럽게 표현하는 퍼스널 브랜딩</li>
+                            <li>개인의 매력을 극대화하는 스타일링 및 표정 연출법</li>
+                            <li>신뢰를 주는 긍정적인 첫인상과 비언어적 소통 전략 구축</li>
+                            <li>사회적 관계 향상을 위한 맞춤형 매너 및 스피치 코칭</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="counseling-photo" class="counseling-card reverse">
+                    <div class="counseling-img-wrap" style="background-image: url('https://images.unsplash.com/photo-1516961642265-531546e84af2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="counseling-content">
+                        <div class="counseling-title-badge" style="transform: translateY(-35px); margin-bottom: -20px; display: inline-block;">사진강좌</div>
+                        <div style="margin-top: 35px; background: #faf8fc; padding: 18px 20px; border-radius: 12px; border: 1px solid #eee; border-left: 4px solid var(--primary-purple);">
+                            <p style="font-size: 15px; font-weight: 700; color: var(--primary-purple); margin-bottom: 8px; word-break: keep-all;">
+                                "매일 지나치던 풍경 속, 진짜 '나'의 시선을 만나는 시간"
+                            </p>
+                            <p style="font-size: 14px; color: #444; line-height: 1.7; word-break: keep-all; margin: 0;">
+                                사진은 멋진 풍경을 남기는 기술이 아니라, 세상을 바라보는 나의 따뜻한 시선을 기록하는 일입니다.<br><br>
+                                복잡한 기술이나 비싼 카메라 대신 익숙한 스마트폰 하나로 일상을 들여다보며, 사진을 통해 나 자신을 발견하고 마음을 채워보는 프로그램입니다.
+                            </p>
+                        </div>
+                        <ul class="counseling-list">
+                            <li class="list-title">카메라 프레임 너머의 세상을 보는 새로운 시각과 통찰력 배양</li>
+                            <li>평범한 일상의 순간을 예술로 기록하며 느끼는 심리적 성취감</li>
+                            <li>피사체와의 교감을 통한 정서적 안정 및 스트레스 해소</li>
+                            <li>나만의 시선을 담아내는 감성 사진 촬영 실무 테크닉</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article id="counseling-brain" class="counseling-card">
+                    <div class="counseling-img-wrap" style="background-image: url('https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="counseling-content">
+                        <div class="counseling-title-badge" style="transform: translateY(-35px); margin-bottom: -20px; display: inline-block;">뇌과학</div>
+                        <div style="margin-top: 35px; background: #faf8fc; padding: 18px 20px; border-radius: 12px; border: 1px solid #eee; border-left: 4px solid var(--primary-purple);">
+                            <p style="font-size: 15px; font-weight: 700; color: var(--primary-purple); margin-bottom: 8px; word-break: keep-all;">
+                                "생각과 감정의 비밀, 뇌를 통해 마음을 읽다"
+                            </p>
+                            <p style="font-size: 14px; color: #444; line-height: 1.7; word-break: keep-all; margin: 0;">
+                                뇌과학 세미나는 뇌의 작동 방식을 통해 나의 마음과 행동 패턴을 고찰해보는 시간입니다.<br><br>
+                                막연했던 나의 감정과 유난히 고치기 힘들었던 습관의 이유를 과학적으로 이해하며, 나 자신을 유연하고 다정하게 다루는 법을 배웁니다.
+                            </p>
+                        </div>
+                        <ul class="counseling-list">
+                            <li class="list-title">인생의 도전과 리셋을 준비하는 사람을 위한 멘탈 리프레밍 코칭[cite: 1]</li>
+                            <li>국제 멘탈력 진단 기반 설계 및 뇌신경 과학 원리 적용[cite: 1]</li>
+                            <li>부정적 감정 회로를 차단하고 스트레스 회복력을 높이는 훈련</li>
+                            <li>성공 루틴으로 자신감 있는 자기 리프레밍 시스템 구축[cite: 1]</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 취미원정대 : 원데이 클래스 섹션 -->
+    <section id="hobby-section" class="hobby-section">
+        <div class="container">
+            <div class="hobby-header">
+                <div class="hobby-title">
+                    <h2>취미원정대 : 원데이 클래스</h2>
+                </div>
+                <div class="hobby-search-area">
+                    <select aria-label="부서별 검색">
+                        <option value="">부서별</option>
+                        <option value="d1">기획부</option>
+                        <option value="d2">교육부</option>
+                    </select>
+                    <select aria-label="연도별 검색">
+                        <option value="">연도별</option>
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                    </select>
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button type="button">Q</button>
+                </div>
+            </div>
+            
+            <div class="hobby-count">
+                전체 4개 (페이지 1/1)
+            </div>
+            
+            <div class="hobby-grid">
+                <article class="hobby-card">
+                    <div class="hobby-img-wrap" style="background-image: url('원데이클래스/아로마 테라피.png');">
+                        <div class="hobby-badges">
+                            <span class="hobby-badge-year">2026</span>
+                            <span class="hobby-badge-cat" style="background-color: #ff5722;">클래스</span>
+                        </div>
+                    </div>
+                    <div class="hobby-info">
+                        <h3>아로마 테라피 : 북 퍼퓸</h3>
+                        <div style="margin-top: 12px; background: #fffbf5; padding: 14px 16px; border-radius: 10px; border-left: 3px solid #ff9800; text-align: left;">
+                            <p style="font-size: 13.5px; font-weight: 700; color: #e65100; margin-bottom: 6px; word-break: keep-all;">
+                                책장에 은은한 향기를 입혀 독서의 깊이를 더하다📚✨
+                            </p>
+                            <p style="font-size: 12.5px; color: #555; line-height: 1.6; word-break: keep-all; margin: 0;">
+                                책이나 서재 공간에 뿌려 독서 몰입도를 높여주는 감성 아이템! 나만의 향을 담은 퍼퓸으로 책을 오감으로 즐겨보세요.
+                            </p>
+                        </div>
+
+                    </div>
+                </article>
+
+                <article class="hobby-card">
+                    <div class="hobby-img-wrap" style="background-image: url('원데이클래스/요리조리 쿠킹 클래스.png');">
+                        <div class="hobby-badges">
+                            <span class="hobby-badge-year">2026</span>
+                            <span class="hobby-badge-cat" style="background-color: #4caf50;">클래스</span>
+                        </div>
+                    </div>
+                    <div class="hobby-info">
+                        <h3>요리조리 쿠킹클래스</h3>
+                        <div style="margin-top: 12px; background: #fffbf5; padding: 14px 16px; border-radius: 10px; border-left: 3px solid #ff9800; text-align: left;">
+                            <p style="font-size: 13.5px; font-weight: 700; color: #e65100; margin-bottom: 6px; word-break: keep-all;">
+                                조금만 배우면 맛있는 한 끼가 되고, 근사한 한 접시가 된다!
+                            </p>
+                            <p style="font-size: 12.5px; color: #555; line-height: 1.6; word-break: keep-all; margin: 0;">
+                                누구나 쉽고 즐겁게 따라 할 수 있는 레시피부터, 같은 음식도 더욱 근사하게 보이게 하는 플레이팅의 작은 비법까지❤️
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hobby-card">
+                    <div class="hobby-img-wrap" style="background-image: url('원데이클래스/플라워.png');">
+                        <div class="hobby-badges">
+                            <span class="hobby-badge-year">2026</span>
+                            <span class="hobby-badge-cat" style="background-color: #e91e63;">클래스</span>
+                        </div>
+                    </div>
+                    <div class="hobby-info">
+                        <h3>플라워 아트 클래스</h3>
+                        <div style="margin-top: 12px; background: #fdf8f9; padding: 14px 16px; border-radius: 10px; border-left: 3px solid #e91e63; text-align: left;">
+                            <p style="font-size: 13.5px; font-weight: 700; color: #c2185b; margin-bottom: 6px; word-break: keep-all;">
+                                계절의 예쁨을 손끝에 담아, 일상에 향기를 채우다🌸
+                            </p>
+                            <p style="font-size: 12.5px; color: #555; line-height: 1.6; word-break: keep-all; margin: 0;">
+                                꽃을 만지며 마음의 스트레스를 비워내는 힐링의 시간! 세상에 단 하나뿐인 나만의 작품을 만들며 오롯이 나에게 몰입해 보세요.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hobby-card">
+                    <div class="hobby-img-wrap" style="background-image: url('원데이클래스/세븐 브릿지.png');">
+                        <div class="hobby-badges">
+                            <span class="hobby-badge-year">2026</span>
+                            <span class="hobby-badge-cat" style="background-color: #2196f3;">투어</span>
+                        </div>
+                    </div>
+                    <div class="hobby-info">
+                        <h3>세븐브릿지 드라이빙 투어</h3>
+                        <div style="margin-top: 12px; background: #f0f7ff; padding: 14px 16px; border-radius: 10px; border-left: 3px solid #0288d1; text-align: left;">
+                            <p style="font-size: 13.5px; font-weight: 700; color: #0277bd; margin-bottom: 6px; word-break: keep-all;">
+                                7개 바다 다리를 따라 펼쳐지는 부산만의 입체적 야경 뷰✨
+                            </p>
+                            <p style="font-size: 12.5px; color: #555; line-height: 1.6; word-break: keep-all; margin: 0;">
+                                부산을 대표하는 해안대교의 고유한 야경과 해안 절경을 연속으로 경험하며 해양 도시 부산의 화려한 매력을 완성해보세요!
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 신규: 수강 신청서 섹션 -->
+    <section id="enrollment-section" class="enrollment-section">
+        <div class="container">
+            <div class="enrollment-wrapper">
+                <div class="enrollment-header">
+                    <h2>수강 신청서 작성</h2>
+                    <p style="font-size: 12.5px; color: #444; line-height: 1.8; word-break: keep-all; margin: 15px auto 30px; max-width: 520px; text-align: center;">
+    문화와 배움, 그리고 사람과 사람이 함께 어우러지는 다양한 프로그램을 준비했습니다.
+    새로운 배움과 즐거운 경험을 통해 일상에 작은 변화와 성장을 더해보시기 바랍니다.
+    여러분의 많은 관심과 참여를 기다리며, 아래 수강신청 안내를 참고하여<br>
+    <strong style="color: var(--primary-purple, #5b21b6); font-size: 15px; background: #f3e8ff; padding: 2px 6px; border-radius: 4px; font-weight: 700;">
+        원하는 프로그램에 신청해 주세요.
+    </strong>
+</p>
+                </div>
+
+                <form id="enrollmentForm" action="#" method="POST" novalidate>
+                    <!-- 1. 이름 -->
+                    <div class="form-group">
+                        <label for="userName">이름</label>
+                        <input type="text" id="userName" class="form-control" placeholder="성함을 입력하세요">
+                    </div>
+                    
+                    <!-- 2. 성별 -->
+                    <div class="form-group">
+                        <label>성별</label>
+                        <div class="gender-group">
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="male">
+                                <span>남성</span>
+                            </label>
+                            <label class="gender-option">
+                                <input type="radio" name="gender" value="female">
+                                <span>여성</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- 3. 생년월일 -->
+                    <div class="form-group">
+                        <label>생년월일</label>
+                        <div class="birth-group">
+                            <input type="text" id="birthYear" class="form-control" placeholder="년도" inputmode="numeric">
+                            <input type="text" id="birthMonth" class="form-control" placeholder="월" inputmode="numeric">
+                            <input type="text" id="birthDay" class="form-control" placeholder="일" inputmode="numeric">
+                        </div>
+                    </div>
+                    
+                    <!-- 4. 연락처 -->
+                    <div class="form-group">
+                        <label for="userPhone">연락처</label>
+                        <input type="tel" id="userPhone" class="form-control" placeholder="010-0000-0000">
+                    </div>
+                    
+                    <!-- 5. 주소 (수정됨) -->
+                    <div class="form-group">
+                        <label for="userAddress">주소 (동까지)</label>
+                        <input type="text" id="userAddress" class="form-control" placeholder="거주 주소를 입력하세요">
+                    </div>
+
+                    <!-- 6. 관심강좌 (신규 추가) -->
+                    <div class="form-group">
+                        <label for="interestCourse">관심강좌</label>
+                        <input type="text" id="interestCourse" class="form-control" placeholder="수강을 원하시는 강좌명을 입력하세요">
+                    </div>
+
+                    <!-- 7. 이용약관 동의 (신규 추가) -->
+                    <div class="terms-group">
+                        <input type="checkbox" id="agreeTerms">
+                        <label for="agreeTerms">이용약관에 동의합니다</label>
+                    </div>
+                    
+                    <!-- 8. 제출 버튼 -->
+                    <button type="submit" class="submit-btn">신청 완료</button>
+                    <div id="enrollmentSuccess" class="enrollment-success" role="status" aria-live="polite">
+                        신청이 완료되었습니다.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 열린 소식 -->
+    <section class="notices">
+        <div class="container">
+            <div class="section-title">
+                <h2>문화 이음 플랫폼의 <span>다양한 소식</span>을 확인해보세요.</h2>
+            </div>
+            <div class="notice-grid">
+                <a href="#" class="notice-card">
+                    <span class="tag">공지사항</span>
+                    <h4>2026년 하반기 TCI 기질 분석 코칭 모집 안내 (선착순 마감)</h4>
+                    <span class="date">2026-08-25</span>
+                </a>
+                <a href="#" class="notice-card">
+                    <span class="tag">살롱 소식</span>
+                    <h4>[가을 예술 인문학 살롱] 다빈치와 고야의 작품으로 보는 심리 해석</h4>
+                    <span class="date">2026-08-20</span>
+                </a>
+                <a href="#" class="notice-card">
+                    <span class="tag">언론보도</span>
+                    <h4>서경석 대표 코치, 지역 사회 마음 챙김 세미나 성료</h4>
+                    <span class="date">2026-08-10</span>
+                </a>
+                <a href="#" class="notice-card">
+                    <span class="tag">칼럼</span>
+                    <h4>나의 도형과 색채가 말해주는 현재의 스트레스 지수</h4>
+                    <span class="date">2026-07-28</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문화 이음 플랫폼 소개 -->
+    <section id="greeting" style="padding: 90px 30; background:#fff;">
+      
+           
+            <!-- 대표 인사말 섹션 -->
+<section class="ceo-section" style="max-width: 1100px; margin: 60px auto; padding: 0 20px;">
+    
+    <!-- Section Title -->
+    <h2 style="font-size: 32px; font-weight: 800; color: #111; text-align: center; margin-bottom: 45px; letter-spacing: -0.5px;">
+        대표 <span style="color: var(--primary-purple, #5b21b6);">인사말</span>
+    </h2>
+
+    <!-- Left/Right Split Layout -->
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 50px; background: #faf8fc; padding: 40px; border-radius: 20px; border: 1px solid #f0e6ff;">
+        
+        <!-- 왼쪽: 크게 들어가는 대표님 사진 영역 -->
+        <div style="flex: 1; min-width: 300px; max-width: 420px; margin: 0 auto;">
+            <div style="width: 100%; height: 480px; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 28px rgba(91, 33, 182, 0.12); border: 2px solid #fff;">
+               <img src="images/원장님 사진.jpg" alt="문화 이음 플랫폼 대표 류진희" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+        </div>
+
+        <!-- 오른쪽: 직함, 이름, 인사말 본문 영역 -->
+        <div style="flex: 1.2; min-width: 300px; text-align: left;">
+            
+            <!-- 직함 및 이름 -->
+            <div style="margin-bottom: 20px; border-bottom: 2px solid var(--primary-purple, #5b21b6); padding-bottom: 15px; display: inline-block;">
+                <span style="font-size: 16px; font-weight: 600; color: var(--primary-purple, #5b21b6); display: block; margin-bottom: 4px;">문화 이음 	플랫폼</span>
+                <h3 style="font-size: 28px; font-weight: 800; color: #222; margin: 0;">
+                    대표 <span style="color: #111;">류진희</span>
+                </h3>
+            </div>
+
+            <!-- 인사말 본문 -->
+            <p style="font-size: 15px; color: #444; line-height: 1.85; word-break: keep-all; margin: 0 0 20px 0;">
+                안녕하세요. 문화 이음 플랫폼 대표 류진희입니다.<br><br>
+                어느 순간부터 이런 생각을 하게 되었습니다.<br>
+                <strong>“부산에도 서울처럼 사람들이 일상 가까이에서 문화를 만나고, 배우고, 이야기 나눌 수 있는 공간이 더 많아졌으면 좋겠다.”</strong><br><br>
+                누군가에게는 배움의 공간이 되고, 누군가에게는 자신의 재능을 나누는 공간이 되며, 새로운 사람과 세상을 만나는 연결고리가 되었으면 합니다. 인문학과 예술, 음악 등 다양한 강좌를 통해 오감으로 문화를 즐기며 삶의 즐거움을 발견해보세요.
+            </p>
+
+            <!-- 슬로건 포인트 -->
+            <div style="background: #fff; padding: 16px 20px; border-radius: 10px; border-left: 4px solid var(--primary-purple, #5b21b6); box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                <p style="font-size: 14px; font-weight: 700; color: var(--primary-purple, #5b21b6); margin: 0; word-break: keep-all;text-align: center;">
+                    "여러분의 삶에 좋은 문화가 이어지고, 좋은 사람이 이어지는 공간이 되겠습니다."
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <section id="purpose" style="padding: 90px 0; background:#f8f3fc;">
+        <div class="container">
+            <div class="section-title">
+                <h2>문화 이음 플랫폼 <span>설립 취지</span></h2>
+            </div>
+            <p style="max-width:850px; margin:0 auto; text-align:center; color:#666;">
+                문화로 사람을 잇고, 배움으로 삶을 풍요롭게 합니다.
+
+                문화이음플랫폼은 예술과 인문학, 문화와 교육을 통해
+                사람과 사람의 마음을 연결하고,
+                배움과 경험이 일상의 새로운 활력이 되도록 돕는 문화공간입니다.
+
+                누구나 쉽게 문화와 예술을 만나고,
+                함께 배우고 소통하며 자신의 삶을 새롭게 바라볼 수 있도록
+                다양한 문화·예술·인문학 프로그램을 제공합니다.
+
+                문화가 삶이 되고, 만남이 관계가 되며,
+                배움이 새로운 희망으로 이어지는 곳.
+
+                문화이음플랫폼은 사람과 문화가 만나
+                더 따뜻하고 행복한 지역사회를 만들어가는
+                문화 연결의 장을 만들어가겠습니다.
+            </p>
+        </div>
+    </section>
+
+    <section id="seoul" style="padding: 90px 0; background:#fff;">
+        <div class="container">
+            <div class="section-title">
+                <h2><span>서울</span> 문화 이음 플랫폼</h2>
+            </div>
+            <p style="max-width:850px; margin:0 auto; text-align:center; color:#666;">
+               경기도 과천시 문원청계 7길
+
+            </p>
+        </div>
+    </section>
+
+    <section id="busan" style="padding: 90px 0; background:#f8f3fc;">
+        <div class="container">
+            <div class="section-title">
+                <h2><span>부산</span> 문화 이음 플랫폼</h2>
+            </div>
+            <p style="max-width:850px; margin:0 auto; text-align:center; color:#666;">
+                부산시 동구 충장대로 160
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Instructor / 강사 소개 -->
+    <section id="instructors" class="instructor-section">
+        <div class="container">
+            <div class="section-title">
+                <h2><span>Instructor</span> 강사 소개</h2>
+            </div>
+
+            <p class="instructor-intro">
+                문화 이음 플랫폼의 각 분야 전문 강사진을 소개합니다.
+                아래 사진 영역에 강사님의 프로필 사진을 넣을 수 있습니다.
+            </p>
+
+            <div class="instructor-grid">
+                <article id="instructor-bora" class="instructor-card photo-kang">
+                    <div class="instructor-photo" style="background-image:url('images/강보승 사진.jpg');">
+                        
+                    </div>
+                    <div class="instructor-info">
+                        <span class="instructor-role">대표강사</span>
+                        <h3>강보라</h3>
+                        <p>예술 인문학</p>
+                    </div>
+                </article>
+
+                <article id="instructor-kyungseok" class="instructor-card photo-seo">
+                    <div class="instructor-photo" style="background-image:url('images/서경석 사진.jpg');">
+                       
+                    </div>
+                    <div class="instructor-info">
+                        <span class="instructor-role">강사</span>
+                        <h3>서경석</h3>
+                        <p>TCI · DISC</p>
+                    </div>
+                </article>
+
+                <article id="instructor-yoonha" class="instructor-card photo-yoon">
+                    <div class="instructor-photo" style="background-image:url('images/이윤하 사진.jpg');">
+                    </div>
+                    <div class="instructor-info">
+                        <span class="instructor-role">강사</span>
+                        <h3>이윤하</h3>
+                        <p>컬러 테라피</p>
+                    </div>
+                </article>
+
+                <article id="instructor-kihyun" class="instructor-card photo-kim">
+                    <div class="instructor-photo" style="background-image:url('images/김기현 사진.jpg');">
+                       
+                    </div>
+                    <div class="instructor-info">
+                        <span class="instructor-role">강사</span>
+                        <h3>김기현</h3>
+                        <p>명리학 · 타로</p>
+                    </div>
+                </article>
+
+                <article id="instructor-yujin" class="instructor-card photo-choi">
+                    <div class="instructor-photo" style="background-image:url('images/최유진 사진.jpg');">
+                        
+                    </div>
+                    <div class="instructor-info">
+                        <span class="instructor-role">강사</span>
+                        <h3>최유진</h3>
+                        <p>이미지 메이킹</p>
+                    </div>
+                </article>
+
+                <article id="instructor-aesoon" class="instructor-card photo-park">
+                    <div class="instructor-photo" style="background-image:url('images/박애순 사진.jpg');">
+                       
+                    </div>
+                    <div class="instructor-info">
+                        <span class="instructor-role">강사</span>
+                        <h3>박애순</h3>
+                        <p>북테라피</p>
+                    </div>
+                </article>
+
+                <article id="instructor-hyeyoung" class="instructor-card photo-jung">
+                    <div class="instructor-photo" style="background-image:url('images/정혜영 사진.jpg');">
+                        
+                    </div>
+                    <div class="instructor-info">
+                        <span class="instructor-role">강사</span>
+                        <h3>정혜영</h3>
+                        <p>사진강좌</p>
+                    </div>
+                </article>
+
+                <article id="instructor-gwangpyeong" class="instructor-card photo-lee">
+                    <div class="instructor-photo" style="background-image:url('images/이광평 사진.jpg');">
+                        
+                    </div>
+                    <div class="instructor-info">
+                        <span class="instructor-role">강사</span>
+                        <h3>이광평</h3>
+                        <p>뇌과학</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 다크 섹션 -->
+    <section class="dark-gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h2>문화 이음 아카이브</h2>
+                <a href="#" style="color: #d8b4e2; font-size: 14px;">전체보기 ➔</a>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1578301978018-3005759f48f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+                    <div class="gallery-text">
+                        <h4>Mona Lisa의 미소</h4>
+                        <p>감정의 이면을 읽는 시간</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+                    <div class="gallery-text">
+                        <h4>The Creation of Adam</h4>
+                        <p>관계의 연결성과 소통</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+                    <div class="gallery-text">
+                        <h4>추상 속의 도형 심리</h4>
+                        <p>내면의 불안을 마주하다</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1536924430914-91f9e2041b83?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80');">
+                    <div class="gallery-text">
+                        <h4>빛과 그림자의 테라피</h4>
+                        <p>에니어그램을 통한 통찰</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 홈페이지 하단 정보 -->
+    <footer class="site-footer" aria-label="문화 이음 플랫폼 홈페이지 정보">
+        <div class="container footer-inner">
+            <div class="footer-info footer-brand">
+                <div class="footer-logo">문화 이음 플랫폼</div>
+                <p>예술과 심리학이 결합된 신개념 융합 코칭 센터</p>
+                <p class="footer-copyright">&copy; 2026 Culture &amp; Mind Connection Platform. All rights reserved.</p>
+            </div>
+            <div class="footer-info footer-contact">
+                <p><strong>대표 코치 :</strong> 서경석</p>
+                <p><strong>주소 :</strong> 부산광역시 중앙대로 821</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            // 상단 네비게이션 GNB 드롭다운 스크립트
+            const navDropdowns = document.querySelectorAll('nav > ul > li.dropdown');
+            navDropdowns.forEach(function (dropdown) {
+                const trigger = dropdown.querySelector(':scope > a');
+                if (!trigger) return;
+
+                trigger.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    navDropdowns.forEach(function (other) {
+                        if (other !== dropdown) {
+                            other.classList.remove('open');
+                            const otherTrigger = other.querySelector(':scope > a');
+                            if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+
+                    const isOpen = dropdown.classList.toggle('open');
+                    trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+
+                dropdown.querySelectorAll('.dropdown-menu a').forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        dropdown.classList.remove('open');
+                        trigger.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            });
+
+            // 프로그램 갤러리 탭 내 드롭다운 스크립트
+            const tabDropdowns = document.querySelectorAll('.tab-dropdown');
+            tabDropdowns.forEach(function(dropdown) {
+                const trigger = dropdown.querySelector('span');
+                trigger.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    dropdown.classList.toggle('open');
+                });
+                
+                dropdown.querySelectorAll('.tab-dropdown-menu li').forEach(function(item) {
+                    item.addEventListener('click', function() {
+                        dropdown.classList.remove('open');
+                    });
+                });
+            });
+
+            // 빈 공간 클릭 시 모든 드롭다운 닫기
+            document.addEventListener('click', function (event) {
+                navDropdowns.forEach(function (dropdown) {
+                    if (!dropdown.contains(event.target)) {
+                        dropdown.classList.remove('open');
+                        const trigger = dropdown.querySelector(':scope > a');
+                        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+                    }
+                });
+                
+                tabDropdowns.forEach(function(dropdown) {
+                    if (!dropdown.contains(event.target)) {
+                        dropdown.classList.remove('open');
+                    }
+                });
+            });
+            
+        });
+    </script>
+
+
+<script>
+(function () {
+    const form = document.getElementById('enrollmentForm');
+    if (!form) return;
+
+    const successBox = document.getElementById('enrollmentSuccess');
+    const submitBtn = form.querySelector('.submit-btn');
+
+    const fields = [
+        document.getElementById('userName'),
+        document.getElementById('birthYear'),
+        document.getElementById('birthMonth'),
+        document.getElementById('birthDay'),
+        document.getElementById('userPhone'),
+        document.getElementById('userAddress'),
+        document.getElementById('interestCourse')
+    ].filter(Boolean);
+
+    function setLabelError(input, isError) {
+        const group = input.closest('.form-group');
+        if (!group) return;
+        const label = group.querySelector('label');
+        if (label) label.classList.toggle('form-error-label', isError);
+        input.classList.toggle('input-error', isError);
+    }
+
+    function hideSuccess() {
+        if (successBox) successBox.classList.remove('show');
+    }
+
+    fields.forEach(input => {
+        input.addEventListener('input', function () {
+            if (this.value.trim()) setLabelError(this, false);
+            hideSuccess();
+        });
+    });
+
+    form.querySelectorAll('input[name="gender"]').forEach(radio => {
+        radio.addEventListener('change', function () {
+            const group = this.closest('.form-group');
+            if (group) {
+                const label = group.querySelector(':scope > label');
+                const genderGroup = group.querySelector('.gender-group');
+                if (label) label.classList.remove('form-error-label');
+                if (genderGroup) genderGroup.classList.remove('input-error');
+            }
+            hideSuccess();
+        });
+    });
+
+    const agree = document.getElementById('agreeTerms');
+    if (agree) {
+        agree.addEventListener('change', function () {
+            const group = this.closest('.terms-group');
+            if (group && this.checked) group.classList.remove('input-error');
+            hideSuccess();
+        });
+    }
+
+    form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        hideSuccess();
+
+        let valid = true;
+        let firstInvalid = null;
+
+        fields.forEach(input => {
+            const empty = !input.value.trim();
+            setLabelError(input, empty);
+            if (empty) {
+                valid = false;
+                if (!firstInvalid) firstInvalid = input;
+            }
+        });
+
+        const genderGroup = form.querySelector('.gender-group');
+        const genderLabel = genderGroup?.closest('.form-group')?.querySelector(':scope > label');
+        const genderChecked = !!form.querySelector('input[name="gender"]:checked');
+
+        if (genderGroup) genderGroup.classList.toggle('input-error', !genderChecked);
+        if (genderLabel) genderLabel.classList.toggle('form-error-label', !genderChecked);
+
+        if (!genderChecked) {
+            valid = false;
+            if (!firstInvalid) firstInvalid = genderGroup;
+        }
+
+        const termsGroup = agree?.closest('.terms-group');
+        const termsChecked = !!agree?.checked;
+        if (termsGroup) termsGroup.classList.toggle('input-error', !termsChecked);
+
+        if (!termsChecked) {
+            valid = false;
+            if (!firstInvalid) firstInvalid = agree;
+        }
+
+        if (!valid) {
+            firstInvalid?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            if (firstInvalid?.focus) firstInvalid.focus({ preventScroll: true });
+            return;
+        }
+
+        const gender = form.querySelector('input[name="gender"]:checked')?.value === 'male'
+            ? '남성' : '여성';
+
+        const data = {
+            name: document.getElementById('userName').value.trim(),
+            gender: gender,
+            birth:
+                document.getElementById('birthYear').value.trim() + '-' +
+                document.getElementById('birthMonth').value.trim().padStart(2, '0') + '-' +
+                document.getElementById('birthDay').value.trim().padStart(2, '0'),
+            phone: document.getElementById('userPhone').value.trim(),
+            address: document.getElementById('userAddress').value.trim(),
+            course: document.getElementById('interestCourse').value.trim()
+        };
+
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = '신청 중...';
+        submitBtn.style.opacity = '0.7';
+        submitBtn.style.cursor = 'wait';
+
+        try {
+            await fetch('https://script.google.com/macros/s/AKfycbw5feAx5VnBoTkmRJc9743DSQUpBH2ScbDqEJL7TCrpZdgFZQTStMMdbzDTrE2xVomh/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'text/plain;charset=utf-8'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (successBox) {
+                successBox.textContent = '신청이 완료되었습니다.';
+                successBox.classList.add('show');
+                successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
+            form.reset();
+            document.querySelectorAll('.input-error').forEach(el => el.classList.remove('input-error'));
+            document.querySelectorAll('.form-error-label').forEach(el => el.classList.remove('form-error-label'));
+
+        } catch (error) {
+            alert('신청 전송 중 문제가 발생했습니다. 잠시 후 다시 시도해 주세요.');
+            console.error(error);
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+            submitBtn.style.opacity = '';
+            submitBtn.style.cursor = '';
+        }
+    });
+})();
+</script>
+
+
+<script>
+(function () {
+    const popup = document.getElementById('popup');
+    const popupBox = document.getElementById('popupBox');
+    if (!popup || !popupBox) return;
+
+    let lastScrollY = window.scrollY;
+    let visualOffset = 0;
+    let settleTimer = null;
+
+    // 움직임이 실제로 보이도록 transition을 사용
+    popupBox.style.transition = 'transform 0.32s cubic-bezier(0.22, 1, 0.36, 1)';
+    popupBox.style.willChange = 'transform';
+
+    window.addEventListener('scroll', function () {
+        if (popup.style.display === 'none') return;
+
+        const now = window.scrollY;
+        const delta = now - lastScrollY;
+        lastScrollY = now;
+
+        // 아래로 스크롤하면 팝업도 아래로, 위로 스크롤하면 위로.
+        // 너무 멀리 이동하지 않도록 최대 90px까지만 자연스럽게 따라감.
+        visualOffset += delta * 0.55;
+        visualOffset = Math.max(-90, Math.min(90, visualOffset));
+
+        popupBox.style.transform = 'translate3d(0,' + visualOffset + 'px,0)';
+
+        clearTimeout(settleTimer);
+        settleTimer = setTimeout(function () {
+            visualOffset = 0;
+            popupBox.style.transform = 'translate3d(0,0,0)';
+        }, 140);
+    }, { passive: true });
+})();
+</script>
+
+</body>
+
+</html>
