@@ -436,7 +436,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 .yth-greeting-section{padding:clamp(40px,7vw,100px) 22px;background:linear-gradient(160deg,#f7fcff,#fff 55%,#f0f8ff)}
 .yth-greeting-wrap{max-width:1140px;margin:0 auto}
 .yth-greeting-card{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(28px,5vw,65px);align-items:center;padding:clamp(25px,4vw,48px);border:1px solid #d9eaf6;border-radius:30px;background:linear-gradient(130deg,#ffffff 0%,#fbfdff 100%);box-shadow:0 20px 65px rgba(40,109,160,.09)}
-.yth-greeting-photo{min-height:490px;height:100%;border:1px solid #d4e6f1;border-radius:22px;background:linear-gradient(140deg,#f0f8ff,#e7f4fb);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.yth-greeting-photo{min-height:490px;height:100%;border:1px solid #d4e6f1;border-radius:22px;background:linear-gradient(140deg,#f0f8ff,#e7f4fb);display:flex;align-items:center;justify-content:center;overflow:hidden}.yth-greeting-photo-image{display:block;width:100%;height:100%;min-height:490px;object-fit:cover;object-position:center 22%;}
 .yth-greeting-photo-placeholder{display:flex;flex-direction:column;align-items:center;gap:13px;color:#829caf}
 .yth-greeting-photo-placeholder svg{width:58px;height:58px;opacity:.55}
 .yth-greeting-photo-placeholder span{font-weight:600;font-size:14px;letter-spacing:.04em}
@@ -546,15 +546,10 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
   <section class="yth-greeting-section" aria-labelledby="director-greeting-title">
     <div class="yth-greeting-wrap">
       <article class="yth-greeting-card">
-        <div class="yth-greeting-photo" aria-label="대표 사진을 나중에 넣을 공간">
-          <div class="yth-greeting-photo-placeholder" aria-hidden="true">
-            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="6" y="8" width="52" height="48" rx="7"/>
-              <circle cx="23" cy="24" r="6"/>
-              <path d="m12 46 13-13 10 10 8-8 9 11"/>
-            </svg>
-            <span>대표 사진</span>
-          </div>
+        <div class="yth-greeting-photo">
+          <img src="assets/images/director-profile.png"
+               alt="YTH-UP 대표 임동희 프로필 사진"
+               class="yth-greeting-photo-image">
         </div>
         <div class="yth-greeting-content">
           <span class="yth-greeting-eyebrow">A MESSAGE FROM YTH-UP</span>
