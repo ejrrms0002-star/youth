@@ -407,10 +407,10 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
             <div class="bg-white rounded-3xl shadow-xl overflow-hidden mb-12 flex flex-col md:flex-row">
                 <div class="md:w-2/5 relative">
     <img src="assets/profiles/profile_lee.jpg" alt="강보라 강사" class="w-full h-auto md:h-full object-cover object-top">
-    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:bg-none"></div>
-                    <div class="absolute bottom-6 left-6 md:hidden text-white">
-                        <span class="bg-[var(--brand-gold)] text-[#a9def5] text-xs font-bold px-2 py-1 rounded mb-2 inline-block">Representative</span>
-                        <h3 class="text-2xl font-bold">강보라 강사</h3>
+                    <!-- 모바일에서는 이름을 사진 아래 별도 영역에 표시해 가독성을 확보 -->
+                    <div class="md:hidden bg-[#f0f8ff] px-6 py-5 border-t border-[#d9eaf6]">
+                        <span class="inline-block bg-[#e1f2fc] text-[#126fa6] text-xs font-bold px-3 py-1 rounded mb-2">Representative</span>
+                        <h3 class="text-2xl font-extrabold text-[#123e61] leading-tight">강보라 강사</h3>
                     </div>
                 </div>
                 <div class="md:w-3/5 p-8 md:p-12 flex flex-col justify-center">
