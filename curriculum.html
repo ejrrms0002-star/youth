@@ -301,19 +301,50 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 }
 </style>
 <style id="curriculum-mobile-title-fix">
-/* Mobile only: keep the complete title on one line without horizontal overflow. */
+/* 모바일에서만: 제목을 가능한 크게 한 줄로 표시. PC는 변경하지 않음. */
 @media (max-width: 767px) {
+  .y-section-heading { padding-left: 8px !important; padding-right: 8px !important; }
   .y-section-heading .curriculum-title {
-    font-size: clamp(16px, 4.5vw, 22px);
-    letter-spacing: -0.075em;
-    white-space: nowrap;
+    width: 100%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(24px, 7vw, 30px) !important;
+    font-weight: 900;
+    letter-spacing: -0.095em;
+    white-space: nowrap !important;
     word-break: keep-all;
-    line-height: 1.35;
+    line-height: 1.3;
   }
-  .y-section-heading .curriculum-title span { display: inline; white-space: nowrap; }
+  .y-section-heading .curriculum-title span {
+    display: inline !important;
+    white-space: nowrap !important;
+  }
+}
+@media (max-width: 360px) {
+  .y-section-heading .curriculum-title { font-size: 6.7vw !important; }
 }
 </style>
-</head>
+<style>
+/* 모바일 전용: 제목은 줄바꿈 없이 화면 폭 안에 표시 */
+@media screen and (max-width: 767px) {
+  .y-section-heading .curriculum-title {
+    display: block !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    font-size: clamp(19px, 5.8vw, 27px) !important;
+    letter-spacing: -0.065em !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+  }
+  .y-section-heading { padding-left: 8px !important; padding-right: 8px !important; }
+}
+</style></head>
 <body class="antialiased overflow-x-hidden">
     <div id="instructor-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
         <div class="fixed inset-0 bg-black/70 backdrop-blur-sm transition-opacity" aria-hidden="true" onclick="closeModal()"></div>
@@ -396,7 +427,7 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
     </div>
 
     <nav class="y-nav"><div class="y-nav-inner"><a class="y-logo" href="index.html" aria-label="YTH-UP 홈"><img src="assets/logos/ythup-brand-final-20261009.png?v=clean-final" alt="YTH-UP 로고"></a><div class="y-links"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">Nov.5</a><a href="curriculum.html" aria-current="page">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">수강후기</a></div><a class="y-cta" href="contact.html">상담 신청 ↗</a><button type="button" class="y-menu-button" aria-label="메뉴 열기" aria-expanded="false" onclick="document.body.classList.toggle('y-open');this.setAttribute('aria-expanded',document.body.classList.contains('y-open'))">☰</button></div><div class="y-mobile"><a href="index.html">홈</a><a href="about.html">소개</a><a href="news.html">요즘 청년</a><a href="instructors.html">Nov.5</a><a href="curriculum.html" aria-current="page">커리큘럼</a><a href="gallery.html">갤러리</a><a href="history.html">연혁</a><a href="reviews.html">수강후기</a><a href="contact.html">상담 신청</a></div></nav>
-<main class="page-main y-subpage"><section class="y-section-heading"><div class="y-eyebrow">PROGRAMS</div><h1 class="curriculum-title"><span>나를 발견하는</span> <span>배움과 경험</span></h1><p>작은 도전이 모여 더 큰 성장이 되는 시간</p></section>
+<main class="page-main y-subpage"><section class="y-section-heading"><div class="y-eyebrow">PROGRAMS</div><h1 class="curriculum-title">나를 발견하는 배움과 경험</h1><p>작은 도전이 모여 더 큰 성장이 되는 시간</p></section>
     <section id="curriculum" class="y-content-section py-20 md:py-24 bg-[#b1dff4] text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col items-start mb-12">
