@@ -453,6 +453,26 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 @media(max-width:800px){.yth-greeting-card{grid-template-columns:1fr;gap:26px}.yth-greeting-photo{min-height:330px;height:350px}.yth-greeting-section{padding:35px 15px 65px}.yth-greeting-quote{padding:18px 16px}}
 @media(max-width:480px){.yth-greeting-card{padding:18px;border-radius:22px}.yth-greeting-photo{height:300px;min-height:300px;border-radius:15px}.yth-greeting-body{font-size:15px;line-height:1.9}.yth-greeting-rule{margin:19px 0 24px}}
 
+/* 모바일 대표사진 전체 표시: 기존 PC 레이아웃 유지 */
+@media (max-width: 800px) {
+  .yth-greeting-photo {
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: hidden;
+    display: block;
+  }
+  .yth-greeting-photo-image {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+}
+
 /* YTH-UP 공통 하단 푸터 */
 .y-footer { background: #111111; color: #a8a8a8; padding: 36px 30px; }
 .y-footer .y-footer-inner { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; }
@@ -595,11 +615,10 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
     <div class="y-footer-left">
       <strong class="y-footer-brand">YTH-UP</strong>
       <p class="y-footer-description">청년의 가능성을 발견하고, 성장과 변화를 함께 만들어가는 공간</p>
-      <p class="y-footer-copyright">© 2024 YTH-UP. All rights reserved.</p>
+      <p class="y-footer-copyright">© 2026 YTH-UP. All rights reserved.</p>
     </div>
     <div class="y-footer-info">
       <p><strong>대표 :</strong> 임동희</p>
-      <p><strong>이메일 :</strong> <a href="mailto:ejrrms0002@gmail.com" style="color:inherit;text-decoration:none;">ejrrms0002@gmail.com</a></p>
       <p><strong>주소 :</strong> 부산진구 중앙대로 821</p>
     </div>
   </div>
