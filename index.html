@@ -167,7 +167,19 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 </footer>
 <!-- YTH-UP independent homepage popups -->
 <style>
-#yth-popups{position:fixed;inset:0;z-index:99999;background:rgba(12,24,40,.66);display:flex;align-items:center;justify-content:center;gap:18px;padding:20px;box-sizing:border-box;overflow:auto;font-family:inherit}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap');
+#yth-popups, #yth-popups button, #yth-popups a, #yth-popups input{font-family:'Manrope','Noto Sans KR',sans-serif}
+#yth-popups .yth-top{font-size:13px;letter-spacing:-.035em;font-weight:700}
+#yth-popups .yth-content h2{font-size:clamp(23px,2.1vw,27px);font-weight:800;letter-spacing:-.065em;line-height:1.38;word-break:keep-all}
+#yth-popups .yth-content p{font-size:13px;letter-spacing:-.025em;line-height:1.85;font-weight:400;word-break:keep-all}
+#yth-popups .yth-notice-row{font-size:12px;letter-spacing:-.035em;line-height:1.8;font-weight:500;word-break:keep-all}
+#yth-popups .yth-kicker{font-family:'Manrope',sans-serif;letter-spacing:.26em;font-size:10px;font-weight:800}
+#yth-popups .yth-novlogo{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:70px;letter-spacing:-.055em;line-height:1.02}
+#yth-popups .yth-person small{font-size:10px;letter-spacing:-.05em;font-weight:600;line-height:1.5}
+#yth-popups .yth-detail{font-size:14px;font-weight:700;letter-spacing:-.03em}
+#yth-popups .yth-foot{font-size:11px;letter-spacing:-.025em;font-weight:500}
+#yth-popups .yth-foot button{font-size:12px;font-weight:600}
+#yth-popups{position:fixed;inset:0;z-index:99999;background:rgba(12,24,40,.66);display:flex;align-items:center;justify-content:center;gap:18px;padding:20px;box-sizing:border-box;overflow:auto;font-family:'Manrope','Noto Sans KR',sans-serif}
 #yth-popups[hidden],#yth-popups .yth-popup[hidden]{display:none!important}
 #yth-popups .yth-popup{width:min(440px,100%);max-height:calc(100dvh - 40px);overflow:auto;background:#fff;border-radius:18px;box-shadow:0 20px 65px #0004;flex-shrink:0;color:#143653}
 #yth-popups .yth-top{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;color:white;font-weight:800;background:#24549d}
