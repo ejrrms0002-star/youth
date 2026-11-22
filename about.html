@@ -507,6 +507,28 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
 .y-footer .y-footer-info a:hover{text-decoration:underline}
 @media(max-width:640px){.y-footer{padding:30px 22px!important}.y-footer .y-footer-inner{flex-direction:column;gap:25px}.y-footer .y-footer-info{text-align:left}.y-footer .y-footer-brand{margin-bottom:16px}}
 </style>
+<style id="ythup-support-director-style">
+
+/* 후원 원장 소개 — 대표 인사말과 조화롭게 이어지는 서브 프로필 */
+.yth-support-section{padding:0 22px clamp(58px,8vw,108px);background:linear-gradient(160deg,#f7fcff 0%,#fff 58%,#f0f8ff 100%)}
+.yth-support-wrap{max-width:1140px;margin:0 auto}
+.yth-support-card{display:grid;grid-template-columns:minmax(250px,.72fr) minmax(0,1.28fr);gap:clamp(26px,4.5vw,58px);align-items:center;padding:clamp(22px,3.5vw,40px);border:1px solid #deedf7;border-radius:28px;background:linear-gradient(120deg,#fff 0%,#fafdff 100%);box-shadow:0 18px 52px rgba(40,109,160,.075);position:relative;overflow:hidden}
+.yth-support-card:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,#8ccde9,#c8a66a,#8ccde9)}
+.yth-support-photo{height:340px;overflow:hidden;border-radius:20px;background:#edf7fc;border:1px solid #e0edf5;box-shadow:0 12px 30px rgba(40,109,160,.09)}
+.yth-support-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 25%}
+.yth-support-content{padding:8px 4px}
+.yth-support-eyebrow{display:inline-flex;align-items:center;gap:9px;color:#2185ba;font-size:11px;font-weight:900;letter-spacing:.2em;margin-bottom:20px}
+.yth-support-eyebrow:before{content:"";width:24px;height:1px;background:#c5a36a}
+.yth-support-role{font-size:15px;color:#63839a;font-weight:800;margin-bottom:7px}
+.yth-support-name{font-size:clamp(30px,3vw,38px);line-height:1.25;letter-spacing:-.055em;color:#153d5e;font-weight:900;margin:0}
+.yth-support-rule{width:54px;height:3px;border-radius:5px;background:#c5a36a;margin:22px 0 25px}
+.yth-support-quote{margin:0;padding:24px 26px;border-radius:0 17px 17px 0;border-left:3px solid #c5a36a;background:linear-gradient(110deg,#eef8fe,#f7fbfe);color:#245574;font-size:clamp(16px,1.55vw,19px);line-height:1.9;font-weight:800;word-break:keep-all}
+.yth-support-signoff{margin-top:23px;text-align:right;color:#7891a3;font-size:12px;letter-spacing:.04em}
+.yth-support-signoff strong{display:block;margin-top:4px;color:#183f5e;font-size:17px;letter-spacing:.02em}
+@media(max-width:800px){.yth-support-section{padding:0 15px 65px}.yth-support-card{grid-template-columns:1fr;gap:23px;padding:22px}.yth-support-photo{height:auto;max-height:none}.yth-support-photo img{height:auto;max-height:560px;object-fit:contain;object-position:center}.yth-support-content{padding:0 2px 4px}}
+@media(max-width:480px){.yth-support-card{padding:17px;border-radius:22px}.yth-support-photo{border-radius:15px}.yth-support-quote{padding:19px 17px;font-size:16px}.yth-support-rule{margin:18px 0 21px}}
+
+</style>
 </head>
 <body class="antialiased overflow-x-hidden">
     <div id="instructor-modal" class="fixed inset-0 z-[100] hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -618,6 +640,24 @@ body{margin:0;background:#f8fcff!important;color:#1b3953!important}
           </div>
           <div class="yth-greeting-quote">“지금의 나를 넘어, 더 큰 가능성을 만나는 곳”</div>
           <div class="yth-greeting-signoff">YTH-UP 대표 <strong>임동희</strong></div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="yth-support-section" aria-labelledby="support-director-title">
+    <div class="yth-support-wrap">
+      <article class="yth-support-card">
+        <div class="yth-support-photo">
+          <img src="assets/images/support-director-inayeon.jpg"
+               alt="YTH-UP 이나연 후원 원장 프로필 사진">
+        </div>
+        <div class="yth-support-content">
+          <span class="yth-support-eyebrow">TOGETHER, WE GROW</span>
+          <div class="yth-support-role">YTH-UP 후원 원장</div>
+          <h2 class="yth-support-name" id="support-director-title">이나연</h2>
+          <div class="yth-support-rule"></div>
+          <p class="yth-support-quote">“배움으로 가능성을 발견하고, 나눔으로 더 큰 성장을 함께합니다.”</p>
+          <div class="yth-support-signoff">YTH-UP 후원 원장<strong>이나연</strong></div>
         </div>
       </article>
     </div>
